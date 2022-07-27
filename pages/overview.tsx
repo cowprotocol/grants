@@ -45,7 +45,10 @@ export default function Overview() {
               The application needs to be made using the <Link href="/apply">grant application form</Link> and by following the instructions in section <strong>&lsquo;How to apply&rsquo; </strong></li>
             <br />
             <li><strong>Application to be chosen for review</strong><br />
-              The committee will choose up to three grants to be reviewed every month. The committee is not obligated to move a specific proposal to the review stage and will do so based on its sole discretion. An applicant can always decide to post their application as a formal DAO proposal.&nbsp;</li>
+              The committee will choose up to three grants to be reviewed every month. The committee is not obligated to move a specific proposal to the review stage and will do so based on its sole discretion. An applicant can always decide to post their application as a formal DAO proposal.&nbsp;
+              <br/><br/>
+              <img src="/images/grants-application-process.png" alt="Grants Application Process" />
+              </li>
           </ol>
           <p><strong>The application process works as follows:&nbsp;</strong></p>
           <ol>
