@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { PropsWithChildren } from 'react'
+import { Media } from 'const/styles/variables'
 
 import { siteConfig } from 'const/meta'
 import { mainMenu, footerMenu } from '../../const/menu'
@@ -19,6 +20,10 @@ const Wrapper = styled.div`
   padding: 0;
   box-sizing: border-box;
   width: 100%;
+
+  ${Media.mobile} {
+    margin: 3rem auto;
+  }
 `
 
 const Content = styled.main`

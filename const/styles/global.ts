@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on, 'cv03' on;
-    scrollbar-color: ${Color.black} ${Color.grey};
+    scrollbar-color: ${Color.black} ${Color.white};
 
     html,
     input,
@@ -64,7 +64,7 @@ const GlobalStyles = createGlobalStyle`
 
   *::selection {
     background: ${Color.black};
-    color: ${Color.black};
+    color: ${Color.white};
   }
 
   *::-moz-selection {
@@ -115,6 +115,10 @@ const GlobalStyles = createGlobalStyle`
     font-size: ${Font.sizeDefault}vmin;
     line-height: 1.7;
     margin: 0 0 2.4vmin;
+
+    ${Media.mobile} {
+      font-size: 1.5rem;
+    }
   }
 
   button {

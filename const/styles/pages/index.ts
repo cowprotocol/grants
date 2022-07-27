@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { transparentize } from 'polished'
 import { Color, Font, Media } from 'const/styles/variables'
+import Button from '@/components/Button'
 
 export const SectionWrapper = styled.div<{ fixed?: boolean }>`
   display: flex;
@@ -35,7 +36,7 @@ export const Section = styled.section<{ split?: boolean, hasImage?: boolean }>`
     flex: 1 1 50%;
   `)}
 
-  > img {
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -64,21 +65,34 @@ export const SectionContent = styled.div<{ split?: boolean }>`
   margin: ${({ split }) => split ? 'auto' : '16vmin auto'};
   justify-content: center;
 
+  ${Media.mobile} {
+    max-width: 100%;
+    padding: 0 6vmin;
+  }
+
   > h1 {
-    text-align: center;
+    text-align: ${({ split }) => split ? 'center' : 'left'};
     font-size: 5vmin;
     line-height: 1.3;
     color: ${Color.black};
-    font-weight: ${Font.weightLight};
-    margin: 0 0 5.6vmin;
+    font-weight: ${({ split }) => split ? Font.weightLight : Font.weightNormal};
+    margin: ${({ split }) => split ? '0 0 5.6vmin' : '0 0 2.4vmin'};
+
+    ${Media.mobile} {
+      font-size: 3.2rem;
+    }
   }
 
   > p {
-    font-size: 1.7vmin;
-    text-align: center;
+    font-size: ${({ split }) => split ? '1.7vmin' : '1.6vmin'};
+    text-align: ${({ split }) => split ? 'center' : 'left'};
     font-weight: ${Font.weightNormal};
-    line-height: 1.7;
-    margin: 0 0 5.6vmin;
+    line-height: ${({ split }) => split ? '1.7' : '1.8'};
+    margin: ${({ split }) => split ? '0 0 5.6vmin' : '0 0 2.4vmin'};
+
+    ${Media.mobile} {
+      font-size: 1.5rem;
+    }
   }
 `
 

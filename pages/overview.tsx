@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import Layout from 'components/Layout/index'
+import Button from '@/components/Button'
 import { Section, SectionContent } from '../const/styles/pages/index'
 
 export default function Overview() {
@@ -7,7 +9,7 @@ export default function Overview() {
     <Layout>
       <Section>
         <SectionContent>
-          <h1>Grants program overview</h1>
+          <h1>Program overview</h1>
           <p>
             CoW Protocol&rsquo;s vision is a future where digital assets can be traded in a fair, efficient and reliable manner among people and communities around the world. Our mission is to make CoW Protocol the best and most popular venue to trade digital assets. We will work toward the mission by attracting the brightest minds in trading and decentralized systems, diligently working to innovate and improve the CoW Protocol.
           <br/>
@@ -34,6 +36,9 @@ export default function Overview() {
             <li>Technical expertise of the grantee/s - does the grantee have the technical expertise to deliver the grant milestones?</li>
           </ul>
           <p>As <a href="https://snapshot.org/#/cow.eth/proposal/0xdc641be107f139753cea051f1bacb8b74b915713a95306c3994f5e03e20d6bef" target="_blank" rel="noopener noreferrer">CIP:8 lays out</a>, the CowDAO Grants Program Safe is managed by two different multi signature wallets. Safe #3 is shared with the CowDAO (Safe #1) and the Grants Committee (Safe #2). Safe #3 holds all the grant funds. You can check the governing process in the below picture:</p>
+          <a href="/images/grant-diagram.png" target="_blank" rel="noopener"><img src="/images/grant-diagram.png" alt="Grant Diagram" /></a>
+
+          <Button fontSize={1.8} marginTB={3.2} label='Apply for a grant' href="/apply" />
         </SectionContent>
       </Section>
     </Layout>
