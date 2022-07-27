@@ -135,6 +135,7 @@ export const SectionContent = styled.div<{ split?: boolean }>`
     font-weight: ${Font.weightNormal};
     line-height: ${({ split }) => split ? '1.7' : '1.8'};
     margin: ${({ split }) => split ? '0 0 5.6vmin' : '0 0 2.4vmin'};
+    word-break: break-word;
 
     ${Media.mediumDown} {
       font-size: 1.5rem;
@@ -144,6 +145,10 @@ export const SectionContent = styled.div<{ split?: boolean }>`
   > p > strong,
   > small {
     color: ${Color.black};
+  }
+
+  > ul > li {
+    word-break: break-word;
   }
 `
 
