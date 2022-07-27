@@ -30,7 +30,7 @@ export default function Home({ siteConfigData }: HomeProps) {
 
       <SectionWrapper>
         <Section split hasImage>
-         <img src="/images/cow-grants-bg-small.jpg" alt="COW Grants Program" />
+         <img src="/images/cow-grants-bg-small-2.jpg" alt="COW Grants Program" />
         </Section>
 
         <Section split>

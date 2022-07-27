@@ -41,11 +41,11 @@ export default function Overview() {
           <h2>Application Process:</h2>
           <ol>
             <li><strong>Initial public application</strong>
-            <br/>
-            The application needs to be made using the <Link href="/apply">grant application form</Link> and by following the instructions in section <strong>&lsquo;How to apply&rsquo; </strong></li>
-            <br/>
-            <li><strong>Application to be chosen for review</strong><br/>
-            The committee will choose up to three grants to be reviewed every month. The committee is not obligated to move a specific proposal to the review stage and will do so based on its sole discretion. An applicant can always decide to post their application as a formal DAO proposal.&nbsp;</li>
+              <br />
+              The application needs to be made using the <Link href="/apply">grant application form</Link> and by following the instructions in section <strong>&lsquo;How to apply&rsquo; </strong></li>
+            <br />
+            <li><strong>Application to be chosen for review</strong><br />
+              The committee will choose up to three grants to be reviewed every month. The committee is not obligated to move a specific proposal to the review stage and will do so based on its sole discretion. An applicant can always decide to post their application as a formal DAO proposal.&nbsp;</li>
           </ol>
           <p><strong>The application process works as follows:&nbsp;</strong></p>
           <ol>
@@ -89,22 +89,22 @@ export default function Overview() {
           <p>If no milestones can be determined, the Grant will be paid a portion upfront to cover costs and the remaining total once the grant is successfully completed.</p>
           <h3>How will I receive the payment?</h3>
           <p>All payments will be made either in wxDAI or COW by the Cow Grants Safe. The amount of each token is to be decided among the grantees and the Grants Committee on a case by case basis.&nbsp;</p>
-          
+
           <h3>Can I apply for a grant if I am located in Country x?</h3>
           <p>Yes! CoW is a worldwide phenomenon. Regardless of where you are from, you are bound by the <a href="https://cloudflare-ipfs.com/ipfs/Qmf9MYhcG2pFrDoVy13p6FWeVF4nG9HbJvRfYYbhazTCFe" target="_blank" rel="noopener noreferrer">CowDAO Participation Agreement</a> and the <Link href="/terms">COWDAO Grant Terms and Conditions</Link> when applying for a grant.&nbsp;</p>
-          
+
           <h3>What type of work/project qualifies for a grant?</h3>
           <p>Anything that benefits the overall CoW Protocol ecosystem will qualify. Prioritization will be based on the impact the grant application will have in the CoW ecosystem &amp; CoWmunity.</p>
           <p>There are numerous functions that can be funded through grants, such as analytics, tooling, infrastructure, growth and many more. Furthermore, the CGP can also fund ecosystem projects that are complementary to the core product of CoW Protocol, such as CoW-themed gaming/NFT projects or Solvers. Check out the &ldquo;<strong>Request for Proposals</strong>&rdquo; section in this document for some CoW-inspiration!</p>
           <p>The goal is to fund a wide range of grants, from simple projects to more elaborate and longer term projects. The funding amount will vary to reflect the complexity.</p>
-          
+
           <h3>How often are applications approved?&nbsp;</h3>
           <p>CowDAO Grants aim to issue rounds of grant funding on an application basis until the first CowDAO installment has dried up.</p>
-          
+
           <h3>What happens if a grantee doesn&apos;t follow through their duties?</h3>
           <p>In order to prevent a grantee from running off with significant funds, the grants committee may establish milestones for any grants above $1K.&nbsp;</p>
           <p>If a grantee has ignored committee messages for 4 weeks, it is considered that the grant has been abandoned and if there are pending milestones to be achieved, they will be marked as incomplete and the funds will not be sent to the grantee.&nbsp;</p>
-          
+
           <h3>Request for Proposals</h3>
           <ol>
             <li>Trading Related Applications</li>
@@ -154,6 +154,21 @@ export default function Overview() {
               <li>CoW POAP/NFT creative use cases &rarr;&nbsp; We want to have the most awesome POAPs &amp; NFTs across town. We are looking for creators to improve our design, style, distribution methods, and ways to Display.</li>
             </ol>
           </ol>
+
+          <h3>Grants Committee</h3>
+          <p>The grants committee has a distribution of 7 community members. Safe #2 (from the schematic image above) <a href="https://gnosis-safe.io/app/gno:0xCA1F000D520c21C47E6c634DD31b92b91A6338bD/settings/owners" target="_blank" rel="noopener noreferrer">gno:0xCA1F000D520c21C47E6c634DD31b92b91A6338bD</a> functions as the Grants committee Safe and has 7 signers with a signing threshold of 5 out of 7. The specified committee members:</p>
+          <ul>
+            <li><a href="https://forum.cow.fi/u/netrunner.eth" target="_blank" rel="noopener noreferrer">@netrunner.eth</a> - 0xc95Fda8A94437c1B936169b62858F13aE0386307</li>
+            <li><a href="https://forum.cow.fi/u/kubesqrt" target="_blank" rel="noopener noreferrer">@Kubesqrt</a> - 0x386b4ba873a4f423ca28a4df1b2347ca949ced0e</li>
+            <li><a href="https://forum.cow.fi/u/chim9" target="_blank" rel="noopener noreferrer">@Chim9</a> - 0xF44217A8b6b3f258BFFEaD635c226528aa516aea</li>
+            <li><a href="https://forum.cow.fi/u/mfw78" target="_blank" rel="noopener noreferrer">@mfw78</a> - 0x0F641723997145715d23c0129b96041011d26666</li>
+          </ul>
+          <ul>
+            <li><a href="https://forum.cow.fi/u/middleway.eth" target="_blank" rel="noopener noreferrer">@middleway.eth</a> - 0xa11da8b2d9a7883eb636d7de426025e5fd9fda1a</li>
+            <li><a href="https://forum.cow.fi/u/Master_CoW" target="_blank" rel="noopener noreferrer">@Master_CoW</a> - 0x76ba9825a5f707f133124e4608f1f2dd1ef4006a</li>
+            <li><a href="https://forum.cow.fi/u/fairlight" target="_blank" rel="noopener noreferrer">@fairlight</a> - 0xCA55E77Ec514B5BD05B3b2B56f106Ba2Fe593A9f</li>
+          </ul>
+          <p>All committee members have provided a brief description of their background on the <a href="https://forum.cow.fi/t/cip-draft-cowswap-grants-program-cgp/314" target="_blank" rel="noopener noreferrer">CIP forum discussion</a>. The committee can be reached on the forum, the Discord channel or through <a href="mailto:grants@cow.fi" target="_blank" rel="noopener noreferrer">grants@cow.fi</a></p>
 
           <Button fontSize={1.8} marginTB={3.2} label='Apply for a grant' href="/apply" />
         </SectionContent>

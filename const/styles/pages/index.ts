@@ -34,6 +34,10 @@ export const Section = styled.section<{ split?: boolean, hasImage?: boolean }>`
     display: flex;
     width: auto;
     flex: 1 1 50%;
+
+    > img {
+      max-height: 100vh;
+    }
   `)}
 
   img {
@@ -43,14 +47,26 @@ export const Section = styled.section<{ split?: boolean, hasImage?: boolean }>`
   }
 
   ${({ split, hasImage }) => (split && hasImage && `
-    ${Media.mediumDown} {
+    ${Media.tabletPortrait} {
       min-height: initial;
-      height: 6rem;
+      height: 50vh;
       flex: 1 1 100%;
+
+      > img {
+        object-position: center -20rem;
+        max-height: 34rem;
+      }
     }
 
-    > img {
-      object-position: top;
+    ${Media.mobile}{
+      min-height: initial;
+      height: 50vh;
+      flex: 1 1 100%;
+
+      > img {
+        object-position: center -20rem;
+        max-height: 34rem;
+      }
     }
   `)}
 `
@@ -67,7 +83,8 @@ export const SectionContent = styled.div<{ split?: boolean }>`
 
   ${Media.mediumDown} {
     max-width: 100%;
-    padding: 0 6vmin;
+    height: auto;
+    padding: 3rem 3rem 6rem;
   }
 
   > h1,

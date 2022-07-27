@@ -22,7 +22,11 @@ const Wrapper = styled.div`
   width: 100%;
 
   ${Media.mediumDown} {
-    margin: 3rem auto;
+    margin: 0 auto;
+  }
+
+  ${Media.tabletPortrait} {
+    margin: 0 auto;
   }
 `
 

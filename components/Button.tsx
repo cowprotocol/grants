@@ -37,8 +37,10 @@ const Wrapper = styled.a<Omit<ButtonProps, "href" | "label" | "target" | "rel">>
   cursor: pointer;
 
   ${Media.mediumDown} {
-    padding: 0 1.6vmin;
-    min-height: 4.8vmin;
+    padding: ${({ paddingLR }) => paddingLR ? `0 ${paddingLR}rem` : '0 6rem'};
+    margin: ${({ marginTB }) => marginTB ? `${marginTB}rem 0` : '0'};
+    min-height: 5.6rem;
+    font-size: 1.6rem;
   }
 
   &:hover {

@@ -31,7 +31,7 @@ const Menu = styled.ol`
   margin: 0;
   width: 100%;
 
-  ${Media.mediumDown} {
+  ${Media.mobile} {
     text-align: center;
     flex-flow: column wrap;
     font-size: 1.4rem;

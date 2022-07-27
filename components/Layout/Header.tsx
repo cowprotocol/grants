@@ -9,9 +9,9 @@ import { Defaults, Color, Font, Media } from 'const/styles/variables'
 const MenuImage = 'images/icons/menu.svg'
 const mobileHeaderHeight = `7rem`;
 
-const Wrapper = styled.header<{ split: boolean }>`
+const Wrapper = styled.header<{ menuVisibile: boolean, split: boolean }>`
   z-index: 10;
-  width: ${({ split }) => split ? '50%' : '100%'};
+  width: ${({ split }) =>  split ? '50%' : '100%'};
   position: relative;
   display: flex;
   flex-flow: row;
@@ -27,16 +27,12 @@ const Wrapper = styled.header<{ split: boolean }>`
 
   ${Media.mediumDown} {
     padding: 0;
-    height: ${mobileHeaderHeight};
+    width: 100%;
+    height: ${({ menuVisible}) => menuVisible ? '100%' : mobileHeaderHeight};
     background: ${transparentize(0.1, Color.white)};
     top: 0;
     justify-content: center;
     backdrop-filter: blur(0.2rem);
-  }
-
-  &.sticky {
-    background: ${transparentize(0.4, Color.black)};
-    backdrop-filter: blur(6vmin);
   }
 
   > a {
@@ -58,8 +54,8 @@ const Menu = styled.ol`
     display: none;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: ${Color.black};
     justify-content: flex-start;
     align-items: flex-start;
@@ -75,7 +71,8 @@ const Menu = styled.ol`
       font-size: 3.2vmin;
 
       ${Media.mobile} {
-        font-size: 2vmin;
+        font-size: 2.2rem;
+        padding: 10rem 6rem 6rem;
       }
     }
 
@@ -104,9 +101,16 @@ const Menu = styled.ol`
     color: inherit;
     text-decoration: none;
 
+    ${Media.mediumDown} {
+      color: ${Color.white};
+    }
+
     &:hover {
-      color: ${Color.black};
       text-decoration: underline;
+
+      ${Media.mediumDown} {
+        color: ${Color.white};
+      }
     }
   }
 `
@@ -116,7 +120,7 @@ const CloseIcon = styled.button`
   position: fixed;
   right: 1.6vmin;
   top: 1.6vmin;
-  color: ${Color.black};
+  color: ${Color.white};
   background: transparent;
   border: 0;
 
@@ -126,13 +130,15 @@ const CloseIcon = styled.button`
     font-size: 5vmin;
     font-family: ${Font.arial};
 
-    ${Media.mobile} {
-      font-size: 3.2vmin;
+    ${Media.mediumDown} {
+      font-size: 2.8rem;
     }
   }
 
   ${Media.mediumDown} {
     display: flex;
+    top: 1.4rem;
+    right: 1.4rem;
   }
 `
 
@@ -167,12 +173,12 @@ const MenuToggle = styled.button`
   }
 `
 
-const Logo = styled.div<{ alternateColor: boolean }>`
+const Logo = styled.div<{ menuVisible: boolean, alternateColor: boolean }>`
   cursor: pointer;
   font-size: 2.2vmin;
   line-height: 1;
   font-weight: ${Font.weightBold};
-  color: ${({ alternateColor }) => alternateColor ? Color.blue : Color.black};
+  color: ${({ menuVisible, alternateColor }) => alternateColor ? Color.blue : menuVisible ? Color.white : Color.black};
   position: fixed;
   top: 5vmin;
   left: 5vmin;
@@ -187,39 +193,44 @@ const Logo = styled.div<{ alternateColor: boolean }>`
     height: ${mobileHeaderHeight};
     align-items: center;
     display: flex;
+    color: ${({ menuVisible }) => menuVisible ? Color.white : Color.black};
   }
 
   > span {
     font-weight: ${Font.weightLight};
     color: ${({ alternateColor }) => alternateColor ? Color.blue : Color.grey};
-  }
 
-  /* ${Media.mediumDown} {
-  } */
+    ${Media.mediumDown} {
+      color: ${({ menuVisible }) => menuVisible ? Color.white : Color.black};
+    }
+  }
 `
 
 export default function Header({ siteConfig, menu, split }) {
-  // const swapURL = siteConfig.url.swap
   const [menuVisible, setIsMenuVisible] = useState(false)
   const toggleBodyScroll = () => {
     !menuVisible ? document.body.classList.add('noScroll') : document.body.classList.remove('noScroll')
+  }
+  const handleClick = () => {
+      setIsMenuVisible(!menuVisible)
+      toggleBodyScroll()
   }
 
   return (
     <>
       <Link href={siteConfig.url.home}>
-        <Logo alternateColor={split}>COW <span>GRANTS</span></Logo>
+        <Logo menuVisible={menuVisible} alternateColor={split}>COW <span>GRANTS</span></Logo>
       </Link>
-      <Wrapper split={split}>
+      <Wrapper menuVisible={menuVisible} split={split}>
         <Menu className={menuVisible ? 'visible' : ""}>
           {menu.map(({ id, title, url, target, rel }) => (
             <li key={id}>
               <a href={url} target={target} rel={rel}>{title}</a>
             </li>
           ))}
-          <CloseIcon />
+          <CloseIcon onClick={handleClick} />
         </Menu>
-        <MenuToggle />
+        <MenuToggle onClick={handleClick} />
       </Wrapper>
     </>
   )
