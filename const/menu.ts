@@ -2,14 +2,14 @@ import { siteConfig } from 'const/meta'
 const {url, social} = siteConfig
 
 export const mainMenu = [
-  { id: 0, title: 'Home', url: url.root },
-  { id: 1, title: 'Program overview', url: url.programOverview },
+  { id: 0, title: 'Program overview', url: url.programOverview },
+  { id: 1, title: 'Grants tracker', url: url.tracker },
   { id: 2, title: 'Apply', url: url.apply },
 ]
 
 export const footerMenu = [
-  {
-    id: 0, title: 'COW Grants', url: url.root, target: '_blank',
-  },
+  {id: 0, title: social.forum.label, url: social.forum.url, target: '_blank'},
+  {id: 1, title: social.discord.label, url: social.discord.url, target: '_blank'},
+  {id: 2, title: social.twitter.label, url: social.twitter.url, target: '_blank'},
 ]
 

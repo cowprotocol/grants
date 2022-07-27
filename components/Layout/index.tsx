@@ -11,7 +11,7 @@ export type LayoutProps = PropsWithChildren<{
   metrics?: any // needs fix
   mainMenuData?: any // needs fix
   footerMenuData?: any // needs fix
-  route: string
+  route?: string
 }>
 
 const Wrapper = styled.div`

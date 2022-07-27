@@ -34,7 +34,7 @@ export default function Home({ siteConfigData }: HomeProps) {
         </Section>
 
         <Section split>
-          <SectionContent>
+          <SectionContent split>
           <h1>The mission of the <b>Grants Program</b> is to fund growth of the Cow Protocol ecosystem.</h1>
           <p>CoW Protocol&apos;s vision is a future where digital assets can be traded in a fair, efficient and reliable manner among people and communities around the world. Our mission is to make CoW Protocol the best and most popular venue to trade digital assets.</p>
           <Button fontSize={1.8} label='Apply for a grant' href="/apply" />

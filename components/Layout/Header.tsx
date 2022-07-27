@@ -190,7 +190,7 @@ export default function Header({ siteConfig, menu, split }) {
 
   return (
     <>
-      <Link passHref href='/'>
+      <Link href={siteConfig.url.home}>
         <Logo alternateColor={split}>COW <span>GRANTS</span></Logo>
       </Link>
       <Wrapper split={split}>

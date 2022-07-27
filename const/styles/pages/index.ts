@@ -54,14 +54,14 @@ export const Section = styled.section<{ split?: boolean, hasImage?: boolean }>`
   `)}
 `
 
-export const SectionContent = styled.div`
+export const SectionContent = styled.div<{ split?: boolean }>`
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
-  max-width: 77rem;
-  height: calc(100vh - 20rem);
-  padding: 0 10rem;
-  margin: auto;
+  max-width: 77vmin;
+  height: ${({ split }) => split ? 'calc(100vh - 20vmin)' : 'auto'};
+  padding: 0 10vmin;
+  margin: ${({ split }) => split ? 'auto' : '16vmin auto'};
   justify-content: center;
 
   > h1 {
@@ -70,27 +70,27 @@ export const SectionContent = styled.div`
     line-height: 1.3;
     color: ${Color.black};
     font-weight: ${Font.weightLight};
-    margin: 0 0 5.6rem;
+    margin: 0 0 5.6vmin;
   }
 
   > p {
-    font-size: 1.8vmin;
+    font-size: 1.7vmin;
     text-align: center;
     font-weight: ${Font.weightNormal};
     line-height: 1.7;
-    margin: 0 0 5.6rem;
+    margin: 0 0 5.6vmin;
   }
 `
 
 export const Content = styled.main`
   margin: 0 auto;
-  padding: 8rem 3.2rem;
+  padding: 8vmin 3.2vmin;
   box-sizing: border-box;
   width: 100%;
-  max-width: 90rem;
+  max-width: 90vmin;
   display: flex;
   flex-flow: column wrap;
-  min-height: 80rem;
+  min-height: 80vmin;
 
   ${Media.mobile} {
     height: auto;

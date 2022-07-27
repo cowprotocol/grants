@@ -4,6 +4,8 @@ export const siteConfig = {
   descriptionShort: 'COW Grants Program',
   url: {
     root: "https://grants.cow.fi",
+    home: "/",
+    tracker: "/tracker",
     programOverview: "/overview",
     apply: "/apply",
   },

@@ -1,12 +1,11 @@
 import Link from 'next/link'
-import Content from 'components/Layout/index'
+import Layout from 'components/Layout/index'
 
-// pages/404.js
 export default function Custom404() {
   return (
-    <Content>
+    <Layout>
       <h1>404 - Page Not Found</h1>
       <section><p>This page could not be found. Please go back to the <Link href="/">home page.</Link></p></section>
-    </Content>
+    </Layout>
   )
 }

@@ -112,7 +112,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ul, ol {
-    font-size: ${Font.sizeDefault}rem;
+    font-size: ${Font.sizeDefault}vmin;
+    line-height: 1.7;
+    margin: 0 0 2.4vmin;
   }
 
   button {
