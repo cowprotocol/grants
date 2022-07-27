@@ -36,7 +36,7 @@ const Wrapper = styled.a<Omit<ButtonProps, "href" | "label" | "target" | "rel">>
   text-decoration: none;
   cursor: pointer;
 
-  ${Media.mobile} {
+  ${Media.mediumDown} {
     padding: 0 1.6vmin;
     min-height: 4.8vmin;
   }

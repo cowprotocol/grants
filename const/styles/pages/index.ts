@@ -10,7 +10,7 @@ export const SectionWrapper = styled.div<{ fixed?: boolean }>`
   top: ${({ fixed }) => fixed ? '0' : 'initial'};
   height: 100vh;
 
-  ${Media.mobile} {
+  ${Media.mediumDown} {
     flex-flow: column wrap;
     position: relative;
     height: auto;
@@ -23,7 +23,7 @@ export const Section = styled.section<{ split?: boolean, hasImage?: boolean }>`
   min-height: 100%;
   flex-flow: row wrap;
 
-  ${Media.mobile} {
+  ${Media.mediumDown} {
     height: auto;
     max-width: 100%;
     min-height: initial;
@@ -43,7 +43,7 @@ export const Section = styled.section<{ split?: boolean, hasImage?: boolean }>`
   }
 
   ${({ split, hasImage }) => (split && hasImage && `
-    ${Media.mobile} {
+    ${Media.mediumDown} {
       min-height: initial;
       height: 6rem;
       flex: 1 1 100%;
@@ -65,34 +65,68 @@ export const SectionContent = styled.div<{ split?: boolean }>`
   margin: ${({ split }) => split ? 'auto' : '16vmin auto'};
   justify-content: center;
 
-  ${Media.mobile} {
+  ${Media.mediumDown} {
     max-width: 100%;
     padding: 0 6vmin;
   }
 
-  > h1 {
+  > h1,
+  > h2,
+  > h3 {
     text-align: ${({ split }) => split ? 'center' : 'left'};
     font-size: 5vmin;
     line-height: 1.3;
     color: ${Color.black};
-    font-weight: ${({ split }) => split ? Font.weightLight : Font.weightNormal};
+    font-weight: ${({ split }) => split ? Font.weightLight : Font.weightBold};
     margin: ${({ split }) => split ? '0 0 5.6vmin' : '0 0 2.4vmin'};
 
-    ${Media.mobile} {
+    > b {
+      font-weight: ${Font.weightBold};
+    }
+
+    ${Media.mediumDown} {
       font-size: 3.2rem;
     }
   }
 
-  > p {
+  > h2 {
+    font-size: 3vmin;
+    margin: 2.4vmin 0;
+    font-weight: ${Font.weightBold};
+
+    ${Media.mediumDown} {
+      font-size: 2.4rem;
+      margin: 2.4rem 0;
+    }
+  }
+
+  > h3 {
+    font-size: 2vmin;
+    margin: 0;
+    font-weight: ${Font.weightBold};
+
+    ${Media.mediumDown} {
+      font-size: 2rem;
+      margin: 2rem 0;
+    }
+  }
+
+  > p,
+  > small {
     font-size: ${({ split }) => split ? '1.7vmin' : '1.6vmin'};
     text-align: ${({ split }) => split ? 'center' : 'left'};
     font-weight: ${Font.weightNormal};
     line-height: ${({ split }) => split ? '1.7' : '1.8'};
     margin: ${({ split }) => split ? '0 0 5.6vmin' : '0 0 2.4vmin'};
 
-    ${Media.mobile} {
+    ${Media.mediumDown} {
       font-size: 1.5rem;
     }
+  }
+
+  > p > strong,
+  > small {
+    color: ${Color.black};
   }
 `
 
@@ -106,7 +140,7 @@ export const Content = styled.main`
   flex-flow: column wrap;
   min-height: 80vmin;
 
-  ${Media.mobile} {
+  ${Media.mediumDown} {
     height: auto;
     max-width: 100%;
     min-height: initial;

@@ -25,7 +25,7 @@ const Wrapper = styled.header<{ split: boolean }>`
   right: 0;
   transition: background 0.5s ease-in-out;
 
-  ${Media.mobile} {
+  ${Media.mediumDown} {
     padding: 0;
     height: ${mobileHeaderHeight};
     background: ${transparentize(0.1, Color.white)};
@@ -40,8 +40,7 @@ const Wrapper = styled.header<{ split: boolean }>`
   }
 
   > a {
-
-    ${Media.mediumOnly} {
+    ${Media.mediumDown} {
       margin: 0 2.4vmin 0 auto;
     }
   }
@@ -149,7 +148,7 @@ const MenuToggle = styled.button`
   height: 5.6vmin;
   width: 5.6vmin;
 
-  ${Media.mobile} {
+  ${Media.mediumDown} {
     height: 4.2rem;
     width: 4.2rem;
     margin: 0 1.6rem 0 auto;
@@ -179,7 +178,7 @@ const Logo = styled.div<{ alternateColor: boolean }>`
   left: 5vmin;
   z-index: 15;
 
-  ${Media.mobile} {
+  ${Media.mediumDown} {
     font-size: 2.2rem;
     top: 0;
     left: 1.6rem;

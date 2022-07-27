@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   box-sizing: border-box;
   width: 100%;
 
-  ${Media.mobile} {
+  ${Media.mediumDown} {
     margin: 3rem auto;
   }
 `
