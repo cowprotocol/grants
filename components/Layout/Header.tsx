@@ -63,16 +63,16 @@ const Menu = styled.ol`
     flex-flow: row wrap;
     gap: 5vmin;
     overflow-y: auto;
+    font-size: 1.6rem;
 
     &.visible {
       position: fixed;
       display: flex;
-      padding: 12vmin 6vmin 6vmin;
-      font-size: 3.2vmin;
+      padding: 10rem 6rem 6rem;
+      font-size: 1.8rem;
 
       ${Media.mobile} {
-        font-size: 2.2rem;
-        padding: 10rem 6rem 6rem;
+        font-size: 1.6rem;
       }
     }
 
@@ -82,14 +82,14 @@ const Menu = styled.ol`
     margin: 0 3.6vmin 0 0;
 
     ${Media.mediumDown} {
-      margin: 0 0 3.6vmin;
+      margin: 0 0 2.6rem;
       line-height: 1;
     }
   }
 
   > li {
     ${Media.mediumDown} {
-      margin: 0 0 3.6vmin;
+      margin: 0 0 2.6rem;
       line-height: 1;
       width: 100%;
       text-align: center;
