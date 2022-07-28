@@ -182,7 +182,7 @@ const Logo = styled.div<{ menuVisible: boolean, alternateColor: boolean }>`
   font-size: 2.2vmin;
   line-height: 1;
   font-weight: ${Font.weightBold};
-  color: ${({ menuVisible, alternateColor }) => menuVisible ? Color.white : alternateColor ? Color.blue : Color.black};
+  color: ${({ menuVisible, alternateColor }) => (menuVisible || alternateColor) ? Color.white : Color.black};
   position: fixed;
   top: 5vmin;
   left: 5vmin;

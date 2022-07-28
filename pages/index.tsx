@@ -17,7 +17,7 @@ interface HomeProps {
 }
 
 export default function Home({ siteConfigData }: HomeProps) {
-  const { title, descriptionShort, url } = siteConfigData
+  const { title, descriptionShort } = siteConfigData
   const router = useRouter()
 
   return (
