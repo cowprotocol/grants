@@ -165,8 +165,6 @@ export default function Overview() {
             <li><a href="https://forum.cow.fi/u/kubesqrt" target="_blank" rel="noopener noreferrer">@Kubesqrt</a> - 0x386b4ba873a4f423ca28a4df1b2347ca949ced0e</li>
             <li><a href="https://forum.cow.fi/u/chim9" target="_blank" rel="noopener noreferrer">@Chim9</a> - 0xF44217A8b6b3f258BFFEaD635c226528aa516aea</li>
             <li><a href="https://forum.cow.fi/u/mfw78" target="_blank" rel="noopener noreferrer">@mfw78</a> - 0x0F641723997145715d23c0129b96041011d26666</li>
-          </ul>
-          <ul>
             <li><a href="https://forum.cow.fi/u/middleway.eth" target="_blank" rel="noopener noreferrer">@middleway.eth</a> - 0xa11da8b2d9a7883eb636d7de426025e5fd9fda1a</li>
             <li><a href="https://forum.cow.fi/u/Master_CoW" target="_blank" rel="noopener noreferrer">@Master_CoW</a> - 0x76ba9825a5f707f133124e4608f1f2dd1ef4006a</li>
             <li><a href="https://forum.cow.fi/u/fairlight" target="_blank" rel="noopener noreferrer">@fairlight</a> - 0xCA55E77Ec514B5BD05B3b2B56f106Ba2Fe593A9f</li>
