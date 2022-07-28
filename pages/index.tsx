@@ -22,7 +22,7 @@ export default function Home({ siteConfigData }: HomeProps) {
 
   return (
     // get page route from next.js router and pass it to Layout component as props 
-    <Layout route={router.asPath}>
+    <Layout route={router.pathname}>
 
       <Head>
         <title>{title} - {descriptionShort}</title>
