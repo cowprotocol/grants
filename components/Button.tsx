@@ -21,14 +21,14 @@ const Wrapper = styled.a<Omit<ButtonProps, "href" | "label" | "target" | "rel">>
   flex-flow: row;
   border: 0.1rem solid ${({ variant }) => variant === 'white' ? transparentize(0.6, Color.grey) : Color.black};
   color: ${({ variant }) => variant === 'white' ? Color.white : Color.black};
-  padding: ${({ paddingLR }) => paddingLR ? `0 ${paddingLR}rem` : '0 6vmin'};
-  margin: ${({ marginTB }) => marginTB ? `${marginTB}vmin 0` : '0'};
+  padding: ${({ paddingLR }) => paddingLR ? `0 ${paddingLR}rem` : '0 6rem'};
+  margin: ${({ marginTB }) => marginTB ? `${marginTB}rem 0` : '0'};
   box-sizing: border-box;
   border-radius: ${({ borderRadius }) => borderRadius ? borderRadius : Defaults.borderRadius};
-  min-height: 5.6vmin;
+  min-height: 5.6rem;
   width: auto;
   align-items: center;
-  font-size: ${({ fontSize }) => fontSize ? `${fontSize}vmin` : "2.2vmin"};
+  font-size: ${({ fontSize }) => fontSize ? `${fontSize}rem` : "2.2rem"};
   justify-content: center;
   transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
   white-space: ${({ wrapText }) => wrapText ? 'initial' : 'nowrap'};

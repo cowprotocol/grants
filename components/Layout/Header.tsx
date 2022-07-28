@@ -18,10 +18,10 @@ const Wrapper = styled.header<{ menuVisibile: boolean, split: boolean }>`
   justify-content: ${({ split }) => split ? 'center' : 'flex-end'};
   align-items: center;
   background: transparent;
-  padding: 0 5.6vmin;
+  padding: 0 5.6rem;
   margin: 0 auto;
   position: fixed;
-  top: 5vmin;
+  top: 5rem;
   right: 0;
   transition: background 0.5s ease-in-out;
 
@@ -37,7 +37,7 @@ const Wrapper = styled.header<{ menuVisibile: boolean, split: boolean }>`
 
   > a {
     ${Media.mediumDown} {
-      margin: 0 2.4vmin 0 auto;
+      margin: 0 2.4rem 0 auto;
     }
   }
 `
@@ -45,7 +45,7 @@ const Wrapper = styled.header<{ menuVisibile: boolean, split: boolean }>`
 const Menu = styled.ol`
   display: flex;
   list-style: none;
-  font-size: ${Font.sizeDefault}vmin;
+  font-size: ${Font.sizeDefault}rem;
   color: ${Color.black};
   padding: 0;
   margin: 0;
@@ -61,7 +61,7 @@ const Menu = styled.ol`
     align-items: flex-start;
     align-content: flex-start;
     flex-flow: row wrap;
-    gap: 5vmin;
+    gap: 5rem;
     overflow-y: auto;
     font-size: 1.6rem;
 
@@ -79,7 +79,7 @@ const Menu = styled.ol`
   }
 
   > li:not(:last-of-type) {
-    margin: 0 3.6vmin 0 0;
+    margin: 0 3.6rem 0 0;
 
     ${Media.mediumDown} {
       margin: 0 0 2.6rem;
@@ -118,8 +118,8 @@ const Menu = styled.ol`
 const CloseIcon = styled.button`
   display: none;
   position: fixed;
-  right: 1.6vmin;
-  top: 1.6vmin;
+  right: 1.6rem;
+  top: 1.6rem;
   color: ${Color.white};
   background: transparent;
   border: 0;
@@ -131,7 +131,7 @@ const CloseIcon = styled.button`
   &::before {
     content: '✕';
     display: block;
-    font-size: 5vmin;
+    font-size: 5rem;
     font-family: ${Font.arial};
 
     ${Media.mediumDown} {
@@ -152,11 +152,11 @@ const MenuToggle = styled.button`
   flex-flow: row;
   align-items: center;
   justify-content: center;
-  border: 0.1vmin solid ${transparentize(0.6, Color.grey)};
+  border: 0.1rem solid ${transparentize(0.6, Color.grey)};
   border-radius: ${Defaults.borderRadius};
   text-decoration: none;
-  height: 5.6vmin;
-  width: 5.6vmin;
+  height: 5.6rem;
+  width: 5.6rem;
 
   ${Media.mediumDown} {
     height: 4.2rem;
@@ -179,13 +179,13 @@ const MenuToggle = styled.button`
 
 const Logo = styled.div<{ menuVisible: boolean, alternateColor: boolean }>`
   cursor: pointer;
-  font-size: 2.2vmin;
+  font-size: 2.2rem;
   line-height: 1;
   font-weight: ${Font.weightBold};
   color: ${({ menuVisible, alternateColor }) => menuVisible || alternateColor ? Color.white : Color.black};
   position: fixed;
-  top: 5vmin;
-  left: 5vmin;
+  top: 5rem;
+  left: 5rem;
   z-index: 15;
 
   ${Media.mediumDown} {

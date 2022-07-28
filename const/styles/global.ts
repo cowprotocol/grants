@@ -112,9 +112,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ul, ol {
-    font-size: ${Font.sizeDefault}vmin;
+    font-size: ${Font.sizeDefault}rem;
     line-height: 1.7;
-    margin: 0 0 2.4vmin;
+    margin: 0 0 2.4rem;
 
     ${Media.mediumDown} {
       font-size: 1.5rem;

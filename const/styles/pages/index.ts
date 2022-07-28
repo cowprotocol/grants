@@ -75,10 +75,10 @@ export const SectionContent = styled.div<{ split?: boolean }>`
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
-  max-width: 77vmin;
-  height: ${({ split }) => split ? 'calc(100vh - 20vmin)' : 'auto'};
-  padding: 0 10vmin;
-  margin: ${({ split }) => split ? 'auto' : '16vmin auto'};
+  max-width: 77rem;
+  height: ${({ split }) => split ? 'calc(100vh - 20rem)' : 'auto'};
+  padding: 0 10rem;
+  margin: ${({ split }) => split ? 'auto' : '16rem auto'};
   justify-content: center;
 
   ${Media.mediumDown} {
@@ -91,11 +91,11 @@ export const SectionContent = styled.div<{ split?: boolean }>`
   > h2,
   > h3 {
     text-align: ${({ split }) => split ? 'center' : 'left'};
-    font-size: 5vmin;
+    font-size: 5rem;
     line-height: 1.3;
     color: ${Color.black};
     font-weight: ${({ split }) => split ? Font.weightLight : Font.weightBold};
-    margin: ${({ split }) => split ? '0 0 5.6vmin' : '0 0 2.4vmin'};
+    margin: ${({ split }) => split ? '0 0 5.6rem' : '0 0 2.4rem'};
 
     > b {
       font-weight: ${Font.weightBold};
@@ -107,8 +107,8 @@ export const SectionContent = styled.div<{ split?: boolean }>`
   }
 
   > h2 {
-    font-size: 3vmin;
-    margin: 2.4vmin 0;
+    font-size: 3rem;
+    margin: 2.4rem 0;
     font-weight: ${Font.weightBold};
 
     ${Media.mediumDown} {
@@ -118,7 +118,7 @@ export const SectionContent = styled.div<{ split?: boolean }>`
   }
 
   > h3 {
-    font-size: 2vmin;
+    font-size: 2rem;
     margin: 0;
     font-weight: ${Font.weightBold};
 
@@ -130,11 +130,11 @@ export const SectionContent = styled.div<{ split?: boolean }>`
 
   > p,
   > small {
-    font-size: ${({ split }) => split ? '1.7vmin' : '1.6vmin'};
+    font-size: ${({ split }) => split ? '1.7rem' : '1.6rem'};
     text-align: ${({ split }) => split ? 'center' : 'left'};
     font-weight: ${Font.weightNormal};
     line-height: ${({ split }) => split ? '1.7' : '1.8'};
-    margin: ${({ split }) => split ? '0 0 5.6vmin' : '0 0 2.4vmin'};
+    margin: ${({ split }) => split ? '0 0 5.6rem' : '0 0 2.4rem'};
     word-break: break-word;
 
     ${Media.mediumDown} {
@@ -154,13 +154,13 @@ export const SectionContent = styled.div<{ split?: boolean }>`
 
 export const Content = styled.main`
   margin: 0 auto;
-  padding: 8vmin 3.2vmin;
+  padding: 8rem 3.2rem;
   box-sizing: border-box;
   width: 100%;
-  max-width: 90vmin;
+  max-width: 90rem;
   display: flex;
   flex-flow: column wrap;
-  min-height: 80vmin;
+  min-height: 80rem;
 
   ${Media.mediumDown} {
     height: auto;

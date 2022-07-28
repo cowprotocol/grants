@@ -21,13 +21,13 @@ const Wrapper = styled.footer<{ split: boolean }>`
 const Menu = styled.ol`
   display: flex;
   list-style: none;
-  font-size: 1.2vmin;
+  font-size: 1.2rem;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 2.4vmin;
+  gap: 2.4rem;
   color: inherit;
-  padding: 2.4vmin 0;
+  padding: 2.4rem 0;
   margin: 0;
   width: 100%;
 
