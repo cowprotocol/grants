@@ -10,7 +10,7 @@ export const SectionWrapper = styled.div<{ fixed?: boolean }>`
   top: ${({ fixed }) => fixed ? '0' : 'initial'};
   height: 100vh;
 
-  ${Media.mediumDown} {
+  ${Media.desktopDown} {
     flex-flow: column wrap;
     position: relative;
     height: auto;
@@ -23,7 +23,7 @@ export const Section = styled.section<{ split?: boolean, hasImage?: boolean }>`
   min-height: 100%;
   flex-flow: row wrap;
 
-  ${Media.mediumDown} {
+  ${Media.desktopDown} {
     height: auto;
     max-width: 100%;
     min-height: initial;
@@ -58,14 +58,19 @@ export const Section = styled.section<{ split?: boolean, hasImage?: boolean }>`
       }
     }
 
-    ${Media.mobile}{
+    ${Media.desktopDown} {
       min-height: initial;
       height: 50vh;
       flex: 1 1 100%;
 
       > img {
-        object-position: center -20rem;
-        max-height: 34rem;
+        object-position: center;
+        max-height: 70rem;
+
+        ${Media.mobile}{
+          object-position: center -20rem;
+          max-height: 34rem;
+        }
       }
     }
   `)}
@@ -81,7 +86,7 @@ export const SectionContent = styled.div<{ split?: boolean }>`
   margin: ${({ split }) => split ? 'auto' : '16rem auto'};
   justify-content: center;
 
-  ${Media.mediumDown} {
+  ${Media.desktopDown} {
     max-width: 100%;
     height: auto;
     padding: 3rem 3rem 6rem;
@@ -101,7 +106,7 @@ export const SectionContent = styled.div<{ split?: boolean }>`
       font-weight: ${Font.weightBold};
     }
 
-    ${Media.mediumDown} {
+    ${Media.desktopDown} {
       font-size: 3.2rem;
     }
   }
@@ -111,7 +116,7 @@ export const SectionContent = styled.div<{ split?: boolean }>`
     margin: 2.4rem 0;
     font-weight: ${Font.weightBold};
 
-    ${Media.mediumDown} {
+    ${Media.desktopDown} {
       font-size: 2.4rem;
       margin: 2.4rem 0;
     }
@@ -122,7 +127,7 @@ export const SectionContent = styled.div<{ split?: boolean }>`
     margin: 0;
     font-weight: ${Font.weightBold};
 
-    ${Media.mediumDown} {
+    ${Media.desktopDown} {
       font-size: 2rem;
       margin: 2rem 0;
     }
@@ -137,7 +142,7 @@ export const SectionContent = styled.div<{ split?: boolean }>`
     margin: ${({ split }) => split ? '0 0 5.6rem' : '0 0 2.4rem'};
     word-break: break-word;
 
-    ${Media.mediumDown} {
+    ${Media.desktopDown} {
       font-size: 1.5rem;
     }
   }
@@ -162,7 +167,7 @@ export const Content = styled.main`
   flex-flow: column wrap;
   min-height: 80rem;
 
-  ${Media.mediumDown} {
+  ${Media.desktopDown} {
     height: auto;
     max-width: 100%;
     min-height: initial;

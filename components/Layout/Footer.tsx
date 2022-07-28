@@ -12,7 +12,7 @@ const Wrapper = styled.footer<{ split: boolean }>`
   bottom: 0;
   right: 0;
 
-  ${Media.mediumDown} {
+  ${Media.desktopDown} {
     width: 100%;
     position: relative;
   }
@@ -31,7 +31,7 @@ const Menu = styled.ol`
   margin: 0;
   width: 100%;
 
-  ${Media.mediumDown} {
+  ${Media.desktopDown} {
     text-align: center;
     flex-flow: column wrap;
     font-size: 1.4rem;

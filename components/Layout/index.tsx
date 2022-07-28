@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   box-sizing: border-box;
   width: 100%;
 
-  ${Media.mediumDown} {
+  ${Media.desktopDown} {
     margin: 0 auto;
   }
 

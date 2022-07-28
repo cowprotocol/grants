@@ -25,7 +25,7 @@ const Wrapper = styled.header<{ menuVisibile: boolean, split: boolean }>`
   right: 0;
   transition: background 0.5s ease-in-out;
 
-  ${Media.mediumDown} {
+  ${Media.desktopDown} {
     padding: 0;
     width: 100%;
     height: ${({ menuVisible}) => menuVisible ? '100%' : mobileHeaderHeight};
@@ -36,7 +36,7 @@ const Wrapper = styled.header<{ menuVisibile: boolean, split: boolean }>`
   }
 
   > a {
-    ${Media.mediumDown} {
+    ${Media.desktopDown} {
       margin: 0 2.4rem 0 auto;
     }
   }
@@ -50,7 +50,7 @@ const Menu = styled.ol`
   padding: 0;
   margin: 0;
 
-  ${Media.mediumDown} {
+  ${Media.desktopDown} {
     display: none;
     top: 0;
     left: 0;
@@ -81,14 +81,14 @@ const Menu = styled.ol`
   > li:not(:last-of-type) {
     margin: 0 3.6rem 0 0;
 
-    ${Media.mediumDown} {
+    ${Media.desktopDown} {
       margin: 0 0 2.6rem;
       line-height: 1;
     }
   }
 
   > li {
-    ${Media.mediumDown} {
+    ${Media.desktopDown} {
       margin: 0 0 2.6rem;
       line-height: 1;
       width: 100%;
@@ -101,14 +101,14 @@ const Menu = styled.ol`
     color: inherit;
     text-decoration: none;
 
-    ${Media.mediumDown} {
+    ${Media.desktopDown} {
       color: ${Color.white};
     }
 
     &:hover {
       text-decoration: underline;
 
-      ${Media.mediumDown} {
+      ${Media.desktopDown} {
         color: ${Color.white};
       }
     }
@@ -134,12 +134,12 @@ const CloseIcon = styled.button`
     font-size: 5rem;
     font-family: ${Font.arial};
 
-    ${Media.mediumDown} {
+    ${Media.desktopDown} {
       font-size: 2.8rem;
     }
   }
 
-  ${Media.mediumDown} {
+  ${Media.desktopDown} {
     display: flex;
     top: 1.4rem;
     right: 1.4rem;
@@ -158,7 +158,7 @@ const MenuToggle = styled.button`
   height: 5.6rem;
   width: 5.6rem;
 
-  ${Media.mediumDown} {
+  ${Media.desktopDown} {
     height: 4.2rem;
     width: 4.2rem;
     margin: 0 1.6rem 0 auto;
@@ -172,7 +172,7 @@ const MenuToggle = styled.button`
     height: 100%;
   }
 
-  ${Media.mediumDown} {
+  ${Media.desktopDown} {
     display: flex;
   }
 `
@@ -188,7 +188,7 @@ const Logo = styled.div<{ menuVisible: boolean, alternateColor: boolean }>`
   left: 5rem;
   z-index: 15;
 
-  ${Media.mediumDown} {
+  ${Media.desktopDown} {
     font-size: 2.2rem;
     top: 0;
     left: 1.6rem;
@@ -204,7 +204,7 @@ const Logo = styled.div<{ menuVisible: boolean, alternateColor: boolean }>`
     font-weight: ${Font.weightLight};
     color: ${({ alternateColor }) => alternateColor ? Color.blue : Color.grey};
 
-    ${Media.mediumDown} {
+    ${Media.desktopDown} {
       color: ${({ menuVisible }) => menuVisible ? Color.white : Color.black};
     }
   }

@@ -116,7 +116,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.7;
     margin: 0 0 2.4rem;
 
-    ${Media.mediumDown} {
+    ${Media.desktopDown} {
       font-size: 1.5rem;
     }
   }
