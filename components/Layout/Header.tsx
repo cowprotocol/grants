@@ -124,6 +124,10 @@ const CloseIcon = styled.button`
   background: transparent;
   border: 0;
 
+  &:hover {
+    color: ${Color.white};
+  }
+
   &::before {
     content: '✕';
     display: block;
@@ -178,7 +182,7 @@ const Logo = styled.div<{ menuVisible: boolean, alternateColor: boolean }>`
   font-size: 2.2vmin;
   line-height: 1;
   font-weight: ${Font.weightBold};
-  color: ${({ menuVisible, alternateColor }) => alternateColor ? Color.blue : menuVisible ? Color.white : Color.black};
+  color: ${({ menuVisible, alternateColor }) => menuVisible ? Color.white : alternateColor ? Color.blue : Color.black};
   position: fixed;
   top: 5vmin;
   left: 5vmin;
