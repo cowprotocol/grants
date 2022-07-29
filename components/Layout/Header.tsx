@@ -10,7 +10,7 @@ const MenuImage = 'images/icons/menu.svg'
 const mobileHeaderHeight = `7rem`;
 
 const Wrapper = styled.header<{ menuVisibile: boolean, split: boolean }>`
-  z-index: 10;
+  z-index: ${({ menuVisible}) => menuVisible ? '100' : '10'};
   width: ${({ split }) =>  split ? '50%' : '100%'};
   position: relative;
   display: flex;
