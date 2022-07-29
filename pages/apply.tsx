@@ -30,7 +30,7 @@ export default function Apply() {
             For more information, check out the <Link href="/overview">COW Grants program overview</Link> to read on judgment criteria for the applications.</p>
         
             {loading && <p><b>Loading grants application form...</b></p>}
-          <iframe src="https://airtable.com/embed/shre8N1jYv7kKynk1?backgroundColor=blue" onLoad={() => setLoading(false)} frameBorder="0" width="100%" height="1719" className="airtable-embed airtable-dynamic-height"></iframe>
+          <iframe src="https://airtable.com/embed/shrt7Rmd5XMYooRsu?backgroundColor=blue" onLoad={() => setLoading(false)} frameBorder="0" width="100%" height="1719" className="airtable-embed airtable-dynamic-height"></iframe>
         </SectionContent>
       </Section>
     </Layout>
