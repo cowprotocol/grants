@@ -1,6 +1,6 @@
 export const siteConfig = {
   title: 'COW Grants Program',
-  description: 'The mission of the COW Grants Program is to fund growth of the COW Protocol ecosystem.',
+  description: '',
   descriptionShort: 'COW Grants Program',
   url: {
     root: "https://grants.cow.fi",
