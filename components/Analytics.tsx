@@ -3,8 +3,7 @@ import Router from 'next/router'
 import ReactGA from 'react-ga';
 import { Media } from 'const/styles/variables'
 import useMediaQuery from 'lib/hooks/useMediaQuery';
-
-const trackingId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
+import { siteConfig } from '@/const/meta'
 
 function handleRouteChange(url: string) {
   console.log('[Analytics] Page view', url)
@@ -12,8 +11,8 @@ function handleRouteChange(url: string) {
 }
 
 function initializeAnalytics(isMobile) {
-  console.log('[Analytics] Tracking ID', trackingId)
-  ReactGA.initialize(trackingId, {
+  console.log('[Analytics] Tracking ID', siteConfig.googleAnalyticsID)
+  ReactGA.initialize(siteConfig.googleAnalyticsID, {
     gaOptions: {
       storage: 'none',
       storeGac: false,
@@ -48,7 +47,7 @@ export function Analytics() {
     const { isInitialized } = analytics
 
     // Initialize Analytics
-    if (trackingId && !isInitialized) {
+    if (siteConfig.googleAnalyticsID && !isInitialized) {
       initializeAnalytics(isMobile)
       setAnalytics(prev => ({
         ...prev,

@@ -6,6 +6,7 @@ import { siteConfig } from 'const/meta'
 import { mainMenu, footerMenu } from '../../const/menu'
 import Header from 'components/Layout/Header'
 import Footer from 'components/Layout/Footer'
+import { Analytics } from 'components/Analytics'
 
 export type LayoutProps = PropsWithChildren<{
   siteConfigData?: any // needs fix
@@ -58,6 +59,7 @@ export default function Layout({ children, route }: LayoutProps) {
         <Header menu={mainMenu} siteConfig={siteConfig} split={isSplitted} />
         <Content>{children ? children : 'No content found'}</Content>
         <Footer menu={footerMenu} siteConfig={siteConfig} split={isSplitted} />
+        <Analytics />
       </Wrapper>
     </>
   )
