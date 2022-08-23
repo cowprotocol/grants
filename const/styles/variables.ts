@@ -1,27 +1,45 @@
 import { transparentize } from 'polished'
+import { css } from 'styled-components'
 
 export const Defaults = {
-  borderRadius: '7rem'
+  borderRadius: '1.6rem'
 }
 
 export const Color = {
-  white: '#CBE9FF',
-  black: '#052B65',
+  white: '#F6F6F6',
+  black: '#000000',
   orange: '#ED6834',
-  grey: '#5573A1',
-  blue: '#CBE9FF',
-  border: transparentize(0.75, '#5573A1'),
-  borderGradient: `linear-gradient(to bottom, ${transparentize(0.75, '#5573A1')}, ${transparentize(1, '#5573A1')})`
+  border: transparentize(0.75, '#979797'),
+  borderGradient: `linear-gradient(to bottom, ${transparentize(0.75, '#979797')}, ${transparentize(1, '#979797')})`,
+  darkBlue: '#052B65',
+  darkBlue2: '#0D3673',
+  darkBlue3: '#042a63',
+  darkBlue4: '#042456',
+  lightBlue: '#CAE9FF',
+  text1: '#405A82',
+  text2: '#95BAEF',
+  gradient: "linear-gradient(45deg,#FFE7E0 0%,#F8DBF4 20%,#C4DDFF 60%,#CAE9FF 100%)",
+  gradientMesh: css`
+    background-color:hsla(142,0%,100%,1);
+    background-image:
+    radial-gradient(at 5% 70%, hsla(204,100%,89%,1) 0px, transparent 50%),
+    radial-gradient(at 47% 40%, hsla(214,100%,88%,1) 0px, transparent 50%),
+    radial-gradient(at 73% 3%, hsla(308,67%,91%,1) 0px, transparent 50%),
+    radial-gradient(at 44% 13%, hsla(13,100%,93%,1) 0px, transparent 50%),
+    radial-gradient(at 61% 70%, hsla(204,100%,89%,1) 0px, transparent 50%),
+    radial-gradient(at 32% 81%, hsla(204,100%,89%,1) 0px, transparent 50%),
+    radial-gradient(at 19% 39%, hsla(204,100%,89%,1) 0px, transparent 50%);
+  `
 }
 
 export const Font = {
-  default: "'Inter var', 'Helvetica Neue', Helvetica, sans-serif",
+  default: "'Averta', 'Helvetica Neue', Helvetica, sans-serif",
   arial: "Arial, Helvetica, sans-serif",
-  sizeDefault: 1.6,
+  sizeDefault: '1.8rem',
   weightLight: 300,
   weightNormal: 400,
-  weightMedium: 500,
-  weightBold: 700,
+  weightMedium: 600,
+  weightBold: 900,
 }
 
 export const Media = {
@@ -33,6 +51,7 @@ export const Media = {
   mediumEnd: '1024px',
   desktopScreen: '1200px',
   desktopScreenLarge: '1400px',
+  desktopScreenSmallHeight: '800px',
   get tinyDown(): string {
     return `@media only screen and (max-width : ${this.tinyScreen})`
   },
@@ -68,6 +87,9 @@ export const Media = {
   },
   get desktopLargeDown(): string {
     return `@media only screen and (max-width: ${this.desktopScreenLarge})`
+  },
+  get desktopSmallHeight(): string {
+    return `@media only screen and (max-height: ${this.desktopScreenSmallHeight})`
   },
   get tabletPortrait(): string {
     return `@media (min-device-width: ${this.smallScreenUp}) and (max-device-width: ${this.mediumEnd}) and (orientation: portrait)`

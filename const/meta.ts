@@ -1,6 +1,6 @@
 export const siteConfig = {
   title: 'COW Grants Program',
-  description: 'The mission of the COW Grants Program is to fund growth of the COW Protocol ecosystem.',
+  description: 'The mission of the COW Grants Program is to fund growth of the CoW Protocol ecosystem.',
   descriptionShort: 'COW Grants Program',
   url: {
     root: "https://grants.cow.fi",
@@ -8,9 +8,10 @@ export const siteConfig = {
     tracker: "/tracker",
     programOverview: "/overview",
     apply: "/apply",
+    airtableApply: 'https://airtable.com/embed/shrt7Rmd5XMYooRsu?backgroundColor=blue'
   },
   social: {
-    twitter: { label: 'Twitter', account: '@MEVprotection', url: 'https://twitter.com/mevprotection' },
+    twitter: { label: 'Twitter', account: '@MEVprotection', url: 'https://twitter.com/CoWSwap' },
     discord: { label: 'Discord', url: 'https://discord.com/invite/cowprotocol' },
     github: { label: 'GitHub', url: 'https://github.com/cowprotocol/contracts' },
     forum: { label: 'Forum', url: 'https://forum.cow.fi/' },

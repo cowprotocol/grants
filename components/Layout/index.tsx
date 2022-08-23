@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { PropsWithChildren } from 'react'
-import { Media } from 'const/styles/variables'
+import { Media, Color } from 'const/styles/variables'
 
 import { siteConfig } from 'const/meta'
 import { mainMenu, footerMenu } from '../../const/menu'
@@ -37,6 +37,17 @@ const Content = styled.main`
   width: 100%;
   display: flex;
   flex-flow: column wrap;
+
+
+  p > a {   
+    text-decoration: underline;
+    cursor: pointer;
+    
+      &:link, 
+      &:visited {
+        color: ${Color.darkBlue};
+      }
+  }
 `
 
 export default function Layout({ children, route }: LayoutProps) {

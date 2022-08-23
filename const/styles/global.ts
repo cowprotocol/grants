@@ -1,14 +1,39 @@
-import "inter-ui/inter.css";
 import styled, { createGlobalStyle } from 'styled-components'
 import { Color, Font, Media } from 'const/styles/variables'
 import { transparentize } from "polished";
 
 const GlobalStyles = createGlobalStyle`
 
-  html, body { font-family: "Inter", "system-ui"; }
+@font-face {
+      font-family: 'Averta';
+      src: url('fonts/averta-regular-webfont.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+  }
 
-  @supports (font-variation-settings: normal) {
-    html, body { font-family: "Inter var", "system-ui"; }
+  @font-face {
+      font-family: 'Averta';
+      src: url('fonts/averta-semibold-webfont.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+  }
+
+  @font-face {
+      font-family: 'Averta';
+      src: url('fonts/averta-bold-webfont.woff2') format('woff2');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+  }
+
+  @font-face {
+      font-family: 'Averta';
+      src: url('fonts/averta-extrabold-webfont.woff2') format('woff2');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
   }
 
   html, body {  
@@ -19,8 +44,9 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
     line-height: 10px;
     font-family: ${Font.default};
-    background: linear-gradient(249.79deg, #CAE9FF 0%, #CAE9FF 17.99%, #CCE8FF 29.72%, #CEE6FF 41.61%, #D1E3FF 50.02%, #D4E0FF 62.41%, #D8DDFF 69.37%, #DCD9FF 75.14%, #E0D4FF 79.35%, #E4D0FF 83.02%, #E8CCFF 85.97%, #ECC8FF 89.27%, #EEC4FF 92.74%, #F1C1FF 96.61%, #F4BDFF 100%);
-    color: ${Color.grey};
+    background: ${Color.gradient};
+    background-attachment: fixed;
+    color: ${Color.text1};
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-variant: none;
@@ -29,50 +55,41 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on, 'cv03' on;
-    scrollbar-color: ${Color.black} ${Color.white};
+    scrollbar-color: ${Color.darkBlue} ${Color.lightBlue};
 
     html,
     input,
     textarea,
     button {
-      font-family: 'Inter', sans-serif;
+      font-family: ${Font.default};
       font-display: fallback;
   }
 
-  @supports (font-variation-settings: normal) {
-    html,
-    input,
-    textarea,
-    button {
-      font-family: 'Inter var', sans-serif;
-    }
-  }
-
     &::-webkit-scrollbar {
-      width: 1.6rem;
+      width: 2.4rem;
     }
 
     &::-webkit-scrollbar-track {
-      background-color: ${Color.black};
+      background-color: ${Color.lightBlue};
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: ${Color.black};
+      background-color: ${Color.darkBlue};
       border-radius: 10rem;
     }
   }
 
   *::selection {
-    background: ${Color.black};
-    color: ${Color.white};
+    background: ${Color.lightBlue};
+    color: ${Color.darkBlue};
   }
 
   *::-moz-selection {
-    background: ${Color.black};
+    background: ${Color.lightBlue};
   }
 
   *::-webkit-selection {
-    background: ${Color.black};
+    background: ${Color.lightBlue};
   }
 
   *::-moz-placeholder {
@@ -80,8 +97,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ::-webkit-scrollbar {
-    width: 0.6rem !important;
-    height: 0.6rem !important;
+    width: 1rem !important;
+    height: 1rem !important;
   }
 
   ::-webkit-scrollbar-thumb {
@@ -99,11 +116,6 @@ const GlobalStyles = createGlobalStyle`
   a {   
     text-decoration: underline;
     cursor: pointer;
-    
-      &:link, 
-      &:visited {
-        color: ${Color.black};
-      }
   }
 
   h1, h2, h3, p, b, i, strong {
@@ -112,13 +124,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ul, ol {
-    font-size: ${Font.sizeDefault}rem;
-    line-height: 1.7;
-    margin: 0 0 2.4rem;
-
-    ${Media.desktopDown} {
-      font-size: 1.5rem;
-    }
   }
 
   button {
@@ -155,7 +160,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     &:focus {
-      border-color: ${Color.black};
+      border-color: ${Color.darkBlue};
     }
 
     &:disabled {
@@ -183,51 +188,31 @@ const GlobalStyles = createGlobalStyle`
 
   .container {
     margin: 0 auto;
-
-    ${Media.smallUp} {
-      max-width: 72rem;
-    }
-    
-    ${Media.mediumUp} {
-      max-width: 96rem;
-    }
-
-    ${Media.mediumOnly} {
-      max-width: 72rem;
-    }
-
-    ${Media.desktop} {
-      max-width: 114rem;
-    }
-
-    ${Media.desktopLarge} {
-      max-width: 132rem;
-    }
   }
 `
 
 export const ExternalLink = styled.a`
   display: inline-block;
-  color: ${Color.black};
+  color: ${Color.darkBlue};
   font-size: inherit;
   white-space: nowrap;
 
   &::after {
     content: "↗";
     color: inherit;
-    font-size: ${Font.sizeDefault}rem;
+    font-size: ${Font.sizeDefault};
     display: inline-block;
     margin: 0 0 0 0.2rem;
   }
 `
 
 export const DropDown = styled.div`
-  border: 0.1rem solid  ${Color.black};
+  border: 0.1rem solid ${transparentize(0.9, Color.lightBlue)};
   border-radius: 0.6rem;
   width: 100%;
   padding: 0;
-  background: transparent;
-  color: ${Color.black};
+  background: ${Color.darkBlue4};
+  color: ${Color.lightBlue};
   font-size: 1.8rem;
   margin: 0 0 2.4rem;
   display: flex;
@@ -240,7 +225,7 @@ export const DropDown = styled.div`
     position: absolute;
     border: 0;
     color: inherit;
-    font-size: ${Font.sizeDefault}rem;
+    font-size: ${Font.sizeDefault};
     display: flex;
     align-items: center;
     pointer-events: none;
@@ -264,7 +249,7 @@ export const DropDown = styled.div`
     font-size: inherit;
     border: 0;
     border-radius: inherit;
-    background: ${transparentize(0.9, Color.black)};
+    background: ${transparentize(0.9, Color.darkBlue)};
 
       &:focus {
         outline: none;
@@ -272,7 +257,7 @@ export const DropDown = styled.div`
 
       > option {
         background-color: ${Color.black};
-        color: ${Color.black};
+        color: ${Color.darkBlue};
       }
   }
 `

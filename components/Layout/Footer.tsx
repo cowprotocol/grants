@@ -15,13 +15,16 @@ const Wrapper = styled.footer<{ split: boolean }>`
   ${Media.desktopDown} {
     width: 100%;
     position: relative;
+    background: ${Color.darkBlue};
+    color: ${Color.text2};
+    padding: 3.2rem 0;
   }
 `
 
 const Menu = styled.ol`
   display: flex;
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
@@ -45,7 +48,7 @@ const Menu = styled.ol`
     line-height: 1.2;
 
     &:hover {
-      color: ${Color.black};
+      color: ${Color.darkBlue};
       text-decoration: underline;
     }
   }

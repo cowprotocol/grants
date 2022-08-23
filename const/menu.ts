@@ -2,7 +2,7 @@ import { siteConfig } from 'const/meta'
 const {url, social} = siteConfig
 
 export const mainMenu = [
-  { id: 0, title: 'Program overview', url: url.programOverview },
+  { id: 0, title: 'Overview', url: url.programOverview },
   { id: 1, title: 'Grants tracker', url: url.tracker },
   { id: 2, title: 'Apply', url: url.apply },
 ]
