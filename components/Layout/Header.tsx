@@ -229,7 +229,6 @@ export default function Header({ siteConfig, menu, split }) {
   }
 
   const isDesktopDown = useMediaQuery(`(max-width: ${Media.desktopScreen})`);
-  console.log(isDesktopDown)
 
   return (
     <InView threshold={1} delay={500}>
@@ -237,23 +236,23 @@ export default function Header({ siteConfig, menu, split }) {
         <>
           <Pixel ref={ref} />
           <Wrapper menuVisible={menuVisible} split={split} className={!inView && 'sticky'}>
-      <Link href={siteConfig.url.home}>
-        <Logo menuVisible={menuVisible} alternateColor={split}>
-          <img src={`images/logo${(!isDesktopDown && split) ? '-light' : ''}.svg`} alt="CoW Grants Program"/>
-          </Logo>
-      </Link>
-        <Menu className={menuVisible ? 'visible' : ""}>
-          {menu.map(({ id, title, url, target, rel }) => (
-            <li key={id}>
-              <a href={url} target={target} rel={rel}>{title}</a>
-            </li>
-          ))}
-          <CloseIcon onClick={handleClick} />
-        </Menu>
-        <MenuToggle onClick={handleClick} />
-      </Wrapper>
-    </>
-          )}
-          </InView>
+            <Link href={siteConfig.url.home}>
+              <Logo menuVisible={menuVisible} alternateColor={split}>
+                <img src={`images/logo${(!isDesktopDown && split) ? '-light' : ''}.svg`} alt="CoW Grants Program" />
+              </Logo>
+            </Link>
+            <Menu className={menuVisible ? 'visible' : ""}>
+              {menu.map(({ id, title, url, target, rel }) => (
+                <li key={id}>
+                  <a href={url} target={target} rel={rel}>{title}</a>
+                </li>
+              ))}
+              <CloseIcon onClick={handleClick} />
+            </Menu>
+            <MenuToggle onClick={handleClick} />
+          </Wrapper>
+        </>
+      )}
+    </InView>
   )
 }
