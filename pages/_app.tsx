@@ -6,6 +6,7 @@ import { siteConfig } from '@/const/meta'
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props
+  const { title, descriptionShort } = siteConfig
 
   return (
     <>
@@ -30,6 +31,8 @@ export default function App(props: AppProps) {
         <meta name="twitter:title" content={siteConfig.title} />
         <meta name="twitter:image" content={siteConfig.url.root + "/images/og-meta-cowgrantsprogram.png"} />
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"></meta>
+
+        <title>{title} - {descriptionShort}</title>
       </Head>
       
       <GlobalStyles />

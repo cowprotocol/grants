@@ -9,7 +9,8 @@ export const siteConfig = {
     tracker: "/tracker",
     programOverview: "/overview",
     apply: "/apply",
-    airtableApply: 'https://airtable.com/embed/shrt7Rmd5XMYooRsu?backgroundColor=blue'
+    airtableApply: 'https://airtable.com/shrt7Rmd5XMYooRsu',
+    airtableTracker: 'https://airtable.com/shrfR2hI0JBMdPfTt'
   },
   social: {
     twitter: { label: 'Twitter', account: '@MEVprotection', url: 'https://twitter.com/CoWSwap' },

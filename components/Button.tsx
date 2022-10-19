@@ -32,7 +32,7 @@ const Wrapper = styled.a<Omit<ButtonProps, "href" | "label" | "target" | "rel">>
   justify-content: center;
   transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
   white-space: ${({ wrapText }) => wrapText ? 'initial' : 'nowrap'};
-  font-weight: ${Font.weightBold};
+  font-weight: ${Font.weightMedium};
   text-decoration: none;
   cursor: pointer;
 
@@ -40,7 +40,7 @@ const Wrapper = styled.a<Omit<ButtonProps, "href" | "label" | "target" | "rel">>
     padding: ${({ paddingLR }) => paddingLR ? `0 ${paddingLR}rem` : '0 6rem'};
     margin: ${({ marginTB }) => marginTB ? `${marginTB}rem 0` : '0'};
     min-height: 5.6rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   &:hover {

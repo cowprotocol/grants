@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { PropsWithChildren } from 'react'
 import { Media, Color } from 'const/styles/variables'
 
+import Head from 'next/head'
 import { siteConfig } from 'const/meta'
 import { mainMenu, footerMenu } from '../../const/menu'
 import Header from 'components/Layout/Header'
@@ -14,6 +15,7 @@ export type LayoutProps = PropsWithChildren<{
   mainMenuData?: any // needs fix
   footerMenuData?: any // needs fix
   route?: string
+  pageTitle?: string
 }>
 
 const Wrapper = styled.div`
@@ -51,10 +53,17 @@ const Content = styled.main`
   }
 `
 
-export default function Layout({ children, route }: LayoutProps) {
+export default function Layout({ children, route, pageTitle }: LayoutProps) {
   const isSplitted = route === '/' ? true : false
+  const { title } = siteConfig
+  const headTitle = `${title} - ${pageTitle}` // Must use a single (text) node to prevent Next.js Title warnings
+
   return (
     <>
+      <Head>
+        <title>{headTitle}</title>
+      </Head>
+
       <Wrapper>
         <Header menu={mainMenu} siteConfig={siteConfig} split={isSplitted} />
         <Content>{children ? children : 'No content found'}</Content>

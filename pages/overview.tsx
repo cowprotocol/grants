@@ -2,11 +2,11 @@
 import Link from 'next/link'
 import Layout from 'components/Layout/index'
 import Button from '@/components/Button'
-import { Section, SectionContent } from '../const/styles/pages/index'
+import { Section, SectionContent, Anchor } from '../const/styles/pages/index'
 
 export default function Overview() {
   return (
-    <Layout>
+    <Layout pageTitle="Overview">
       <Section>
         <SectionContent>
           <h1>Program overview</h1>
@@ -42,7 +42,7 @@ export default function Overview() {
           <ol>
             <li><strong>Initial public application</strong>
               <br />
-              The application needs to be made using the <Link href="/apply">grant application form</Link> and by following the instructions in section <strong>&lsquo;How to apply&rsquo; </strong></li>
+              The application needs to be made using the <Link href="/apply">grant application form</Link> and by following the instructions in section <a href="#how-to-apply">How to apply</a>.</li>
             <br />
             <li><strong>Application to be chosen for review</strong><br />
               The committee will choose up to three grants to be reviewed every month. The committee is not obligated to move a specific proposal to the review stage and will do so based on its sole discretion. An applicant can always decide to post their application as a formal DAO proposal.&nbsp;
@@ -52,8 +52,8 @@ export default function Overview() {
           </ol>
           <p><strong>The application process works as follows:&nbsp;</strong></p>
           <ol>
-            <li>Anyone can submit an application to the Cow Grants DAO. They just need to use the application template to fill in their application details and then wait for the Grants Committee to reach out.&nbsp;</li>
-            <li>The grants committee will review the application and comment on the proposal, which could lead to one of the following possible outcomes:&nbsp;</li>
+            <li>Anyone can submit an application to the CoW Grants DAO. They just need to use the application template to fill in their application details and then wait for the Grants Committee to reach out.&nbsp;</li>
+            <li>The grants committee will review the application and comment on the proposal, which could lead to one of the following possible outcomes:</li>
             <ol>
               <li>The committee finds the application a successful and approves the grant</li>
               <li>The committee denies the grant, and that is the end of the process</li>
@@ -64,14 +64,15 @@ export default function Overview() {
           <ol>
             <li>If the committee feedback is positive, then the Grants Committee will structure the grant.</li>
             <ol>
-              <li>For structuring the grant, the committee will outline a series of milestones to be achieved to obtain the full funding.&nbsp;</li>
-              <li>If the milestones are achieved, the grantee will be compensated for reaching that milestone and will move on to the next milestone if its the case</li>
-              <li>If the milestones are not achieved, the Grants Committee reserves the right to stop funding the grantee until completion of the milestones, or decide to officially close the grant.&nbsp;</li>
+              <li>For structuring the grant, the committee will outline a series of milestones to be achieved to obtain the full funding.</li>
+              <li>If the milestones are achieved, the grantee will be compensated for reaching that milestone and will move on to the next milestone if its the case.</li>
+              <li>If the milestones are not achieved, the Grants Committee reserves the right to stop funding the grantee until completion of the milestones, or decide to officially close the grant</li>
             </ol>
           </ol>
+
           <h2>Application FAQs</h2>
           <h3>What is the CoW DAO Grants Program (CGP)?</h3>
-          <p>The mission of the CGP is to provide funding to help grow the CoW Protocol ecosystem and drive utility and demand for the $COW token. The primary areas of growth for CoW Protocol under this proposal are defined as:</p>
+          <p>The mission of the CGP is to provide funding to help grow the CoW Protocol ecosystem and drive utility and demand for the COW token. The primary areas of growth for CoW Protocol under this proposal are defined as:</p>
           <ul>
             <li>CoWmunity growth</li>
             <li>User interface and user experience (UI/UX)</li>
@@ -82,17 +83,21 @@ export default function Overview() {
             <li>Other/misc.</li>
           </ul>
 
+          <Anchor id="how-to-apply"/>
           <h3>How do I apply?</h3>
           <p>Fill out the <Link href="/apply">application form</Link>. Your application will be visible by everyone and the Grants committee will evaluate whether to decline, meet with you to adjust the application or send it to the official committee for final approval.&nbsp;</p>
           <p>If you have chosen your application to be private, it will initially only be visible by the Grants committee.&nbsp;</p>
           <p>You are bound by the <a href="https://cloudflare-ipfs.com/ipfs/Qmf9MYhcG2pFrDoVy13p6FWeVF4nG9HbJvRfYYbhazTCFe" target="_blank" rel="noopener noreferrer">CoW DAO Participation Agreement</a> and the <Link href="/terms">CoW DAO Grant Terms and Conditions</Link> when applying for a grant.</p>
-          <h3>What is the minimum and maximum funding amount of a COW grant?</h3>
+          
+          <h3>What is the minimum and maximum funding amount of a CoW grant?</h3>
           <p>The CoW DAO Grants Program provides different levels of funding according to the task to be completed. A more impactful task will require more work and thus will require more funding, while a less impactful trask will require much less work and thus require less funding.&nbsp;</p>
-          <h2>How will I be compensated for my work?</h2>
+          
+          <h3>How will I be compensated for my work?</h3>
           <p>The Grants Committee will work with you to establish possible milestones that could help split up the compensation so as to allow payment whenever a milestone is hit.</p>
           <p>If no milestones can be determined, the Grant will be paid a portion upfront to cover costs and the remaining total once the grant is successfully completed.</p>
+          
           <h3>How will I receive the payment?</h3>
-          <p>All payments will be made either in wxDAI or COW by the Cow Grants Safe. The amount of each token is to be decided among the grantees and the Grants Committee on a case by case basis.&nbsp;</p>
+          <p>All payments will be made either in wxDAI or COW by the CoW Grants Safe. The amount of each token is to be decided among the grantees and the Grants Committee on a case by case basis.&nbsp;</p>
 
           <h3>Can I apply for a grant if I am located in Country x?</h3>
           <p>Yes! CoW is a worldwide phenomenon. Regardless of where you are from, you are bound by the <a href="https://cloudflare-ipfs.com/ipfs/Qmf9MYhcG2pFrDoVy13p6FWeVF4nG9HbJvRfYYbhazTCFe" target="_blank" rel="noopener noreferrer">CoW DAO Participation Agreement</a> and the <Link href="/terms">CoW DAO Grant Terms and Conditions</Link> when applying for a grant.&nbsp;</p>
@@ -132,12 +137,12 @@ export default function Overview() {
             <li>Solvers</li>
             <ol>
               <li>Develop a Solver specialized in weighted pools</li>
-              <li>Develop a Solver specialized in finding CoWs.</li>
+              <li>Develop a Solver specialized in finding CoWs</li>
               <li>Develop a Solver specialized in tapping into Private Liquidity</li>
             </ol>
             <li>Integrations</li>
             <ol>
-              <li>Build/achieve an integration from a major DeFi platform to route orders into CoW Protocol.</li>
+              <li>Build/achieve an integration from a major DeFi platform to route orders into CoW Protocol</li>
             </ol>
             <li>Education</li>
             <ol>
@@ -170,7 +175,7 @@ export default function Overview() {
             <li><a href="https://forum.cow.fi/u/Master_CoW" target="_blank" rel="noopener noreferrer">@Master_CoW</a> - 0x76ba9825a5f707f133124e4608f1f2dd1ef4006a</li>
             <li><a href="https://forum.cow.fi/u/fairlight" target="_blank" rel="noopener noreferrer">@fairlight</a> - 0xCA55E77Ec514B5BD05B3b2B56f106Ba2Fe593A9f</li>
           </ul>
-          <p>All committee members have provided a brief description of their background on the <a href="https://forum.cow.fi/t/cip-draft-cowswap-grants-program-cgp/314" target="_blank" rel="noopener noreferrer">CIP forum discussion</a>. The committee can be reached on the forum, the Discord channel or through <a href="mailto:grants@cow.fi" target="_blank" rel="noopener noreferrer">grants@cow.fi</a></p>
+          <p>All committee members have provided a brief description of their background on the <a href="https://forum.cow.fi/t/cip-draft-cowswap-grants-program-cgp/314" target="_blank" rel="noopener noreferrer">CIP forum discussion</a>. The committee can be reached on the forum, the Discord channel or through <a href="mailto:grants@cow.fi" target="_blank" rel="noopener noreferrer">grants@cow.fi</a>.</p>
 
           <Button fontSize={1.8} marginTB={3.2} label='Apply for a grant' href="/apply" />
         </SectionContent>

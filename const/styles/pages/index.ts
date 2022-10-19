@@ -9,7 +9,6 @@ export const SectionWrapper = styled.div<{ fixed?: boolean }>`
   height: 100vh;
 
   ${Media.desktopDown} {
-    flex-flow: column wrap;
     position: relative;
     height: auto;
   }
@@ -45,18 +44,39 @@ export const Section = styled.section<{ split?: boolean, hasImage?: boolean, bgC
     object-fit: contain;
     width: 100%;
     height: 100%;
-    max-width: ${({ imageMaxWidth }) => imageMaxWidth ? `${imageMaxWidth}%` : '100%'};
-    max-height: ${({ imageMaxHeight }) => imageMaxHeight ? `${imageMaxHeight}%` : '100%'};
+    max-width: 40%;
+    max-height: 40%;
+
+    ${Media.desktopDown} {
+      max-width: 100%;
+      max-height: auto;
+
+      ${({ split, hasImage }) => (split && hasImage && `
+        max-width: 60%;
+        max-height: 60%;
+      `)}
+    }
   }
 
   ${({ split, hasImage }) => (split && hasImage && `
-
     ${Media.desktopDown} {
       width: 100%;
-      padding: 4.2rem 0;
       order: 2;
     }
   `)}
+
+  ${({ split }) => (split && `
+    ${Media.desktopDown} {
+      max-width: 100%;
+    }
+  `)}
+`
+
+export const Anchor = styled.span`
+  display: block;
+  position: relative;
+  top: -9rem;
+  visibility: hidden;
 `
 
 export const SectionContent = styled.div<{ split?: boolean }>`
@@ -74,6 +94,12 @@ export const SectionContent = styled.div<{ split?: boolean }>`
     height: auto;
     padding: 3rem 3rem 0;
   }
+
+  ${({ split, hasImage }) => (split && !hasImage && `
+    ${Media.desktopDown} {
+      max-width: 86rem;
+    }
+  `)}
 
   > h1,
   > h2,

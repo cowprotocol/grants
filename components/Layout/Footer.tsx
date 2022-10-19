@@ -48,8 +48,12 @@ const Menu = styled.ol`
     line-height: 1.2;
 
     &:hover {
-      color: ${Color.darkBlue};
       text-decoration: underline;
+      color: ${Color.darkBlue};
+
+      ${Media.desktopDown} {
+        color: ${Color.lightBlue};
+      {
     }
   }
 `

@@ -4,7 +4,7 @@ import { Section, SectionContent } from '../const/styles/pages/index'
 
 export default function Custom404() {
   return (
-    <Layout>
+    <Layout pageTitle="404 Page not found">
       <Section>
         <SectionContent>
         <h1>404 - Page Not Found</h1>
