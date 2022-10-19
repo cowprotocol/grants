@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link'
-import { Color, Font, Media } from 'const/styles/variables'
+import { Color, Media } from 'const/styles/variables'
 
 const Wrapper = styled.footer<{ split: boolean }>`
   display: flex;
@@ -74,7 +74,7 @@ export default function Footer({ siteConfig, menu, split }) {
             </Link>
           </li>
         ))}</>}
-        <li>©{siteConfig.title} - {currentYear}</li>
+        <li>©{siteConfig.titleShort} {currentYear}</li>
       </Menu>
 
     </Wrapper >

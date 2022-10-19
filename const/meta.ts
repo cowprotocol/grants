@@ -1,5 +1,6 @@
 export const siteConfig = {
   title: 'CoW Grants Program',
+  titleShort: 'CoW Grants',
   description: 'The mission of the CoW Grants Program is to fund growth of the CoW Protocol ecosystem.',
   descriptionShort: 'CoW Grants Program',
   googleAnalyticsID: 'G-WRW3B01KY5',
