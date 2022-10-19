@@ -38,15 +38,17 @@ const GlobalStyles = createGlobalStyle`
 
   html, body {  
     width: 100%;
+    height: 100%;
     min-height: 100vh;
     min-width: 300px;
     margin: 0;
     font-size: 62.5%;
     line-height: 10px;
     font-family: ${Font.default};
-    background: ${Color.gradient};
-    background-attachment: fixed;
+    font-display: fallback;
     color: ${Color.text1};
+    background-image: ${Color.gradient};
+    background-attachment: fixed;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-variant: none;
@@ -56,14 +58,6 @@ const GlobalStyles = createGlobalStyle`
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on, 'cv03' on;
     scrollbar-color: ${Color.darkBlue} ${Color.lightBlue};
-
-    html,
-    input,
-    textarea,
-    button {
-      font-family: ${Font.default};
-      font-display: fallback;
-  }
 
     &::-webkit-scrollbar {
       width: 2.4rem;
