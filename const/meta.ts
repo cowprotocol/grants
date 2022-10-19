@@ -10,7 +10,8 @@ export const siteConfig = {
     programOverview: "/overview",
     apply: "/apply",
     airtableApply: 'https://airtable.com/shrt7Rmd5XMYooRsu',
-    airtableTracker: 'https://airtable.com/shrfR2hI0JBMdPfTt'
+    airtableTracker: 'https://airtable.com/shrfR2hI0JBMdPfTt',
+    cowLanding: 'https://cow.fi/'
   },
   social: {
     twitter: { label: 'Twitter', account: '@MEVprotection', url: 'https://twitter.com/CoWSwap' },

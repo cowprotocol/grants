@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Color, Font, Media } from 'const/styles/variables'
+import {Wrapper as TextLinkWrapper} from '@/components/TextLink'
 
 export const SectionWrapper = styled.div<{ fixed?: boolean }>`
   display: flex;
@@ -11,6 +12,14 @@ export const SectionWrapper = styled.div<{ fixed?: boolean }>`
   ${Media.desktopDown} {
     position: relative;
     height: auto;
+  }
+
+  ${TextLinkWrapper} {
+    width: 100%;
+    text-align: center;
+    margin: 4.2rem auto;
+    font-size: 1.8rem;
+
   }
 `
 
@@ -44,12 +53,15 @@ export const Section = styled.section<{ split?: boolean, hasImage?: boolean, bgC
     object-fit: contain;
     width: 100%;
     height: 100%;
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 100%;
+    max-height: auto
+
+    ${({ split, hasImage }) => (split && hasImage && `
+        max-width: 40%;
+        max-height: 40%;
+    `)}
 
     ${Media.desktopDown} {
-      max-width: 100%;
-      max-height: auto;
 
       ${({ split, hasImage }) => (split && hasImage && `
         max-width: 60%;
@@ -162,6 +174,8 @@ export const SectionContent = styled.div<{ split?: boolean }>`
   > small {
     color: ${Color.darkBlue};
   }
+
+
 `
 
 export const Content = styled.main`

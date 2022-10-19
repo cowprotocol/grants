@@ -42,7 +42,8 @@ const Content = styled.main`
   flex-flow: column wrap;
 
 
-  p > a {   
+  p > a,
+  li > a {   
     text-decoration: underline;
     cursor: pointer;
     
