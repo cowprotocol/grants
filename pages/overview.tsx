@@ -26,7 +26,7 @@ export default function Overview() {
             <li>Develop new Solvers</li>
             <li>Developer tools (SDK)</li>
             <li>Integrations and protocol order flow</li>
-            <li>Other/misc.</li>
+            <li>Other/misc</li>
           </ul>
           <p>The judgment criteria for the grant applications will be based on the following:</p>
           <ul>
@@ -42,7 +42,7 @@ export default function Overview() {
           <ol>
             <li><strong>Initial public application</strong>
               <br />
-              The application needs to be made using the <Link href="/apply">grant application form</Link> and by following the instructions in section <a href="#how-to-apply">How to apply</a>.</li>
+              The application needs to be made using the <Link href="/apply">grant application form</Link> and by following the instructions in section <a href="#how-to-apply">How to apply</a></li>
             <br />
             <li><strong>Application to be chosen for review</strong><br />
               The committee will choose up to three grants to be reviewed every month. The committee is not obligated to move a specific proposal to the review stage and will do so based on its sole discretion. An applicant can always decide to post their application as a formal DAO proposal.&nbsp;
@@ -57,15 +57,15 @@ export default function Overview() {
             <ol>
               <li>The committee finds the application a successful and approves the grant</li>
               <li>The committee denies the grant, and that is the end of the process</li>
-              <li>The committee meets with the grant applicant and reworks together the application to make sure that it aligns correctly with CGP goals. Once changed, the application can be reconsidered.</li>
+              <li>The committee meets with the grant applicant and reworks together the application to make sure that it aligns correctly with CGP goals. Once changed, the application can be reconsidered</li>
             </ol>
           </ol>
           <p><em>*The committee will show its preference towards the grant in a public forum poll where all committee members are required to vote before moving the grant to the next stage. </em></p>
           <ol>
-            <li>If the committee feedback is positive, then the Grants Committee will structure the grant.</li>
+            <li>If the committee feedback is positive, then the Grants Committee will structure the grant</li>
             <ol>
-              <li>For structuring the grant, the committee will outline a series of milestones to be achieved to obtain the full funding.</li>
-              <li>If the milestones are achieved, the grantee will be compensated for reaching that milestone and will move on to the next milestone if its the case.</li>
+              <li>For structuring the grant, the committee will outline a series of milestones to be achieved to obtain the full funding</li>
+              <li>If the milestones are achieved, the grantee will be compensated for reaching that milestone and will move on to the next milestone if its the case</li>
               <li>If the milestones are not achieved, the Grants Committee reserves the right to stop funding the grantee until completion of the milestones, or decide to officially close the grant</li>
             </ol>
           </ol>
@@ -80,7 +80,7 @@ export default function Overview() {
             <li>Develop new Solvers</li>
             <li>Developer tools (SDK)</li>
             <li>Integrations and protocol order flow</li>
-            <li>Other/misc.</li>
+            <li>Other/misc</li>
           </ul>
 
           <Anchor id="how-to-apply"/>
@@ -97,14 +97,14 @@ export default function Overview() {
           <p>If no milestones can be determined, the Grant will be paid a portion upfront to cover costs and the remaining total once the grant is successfully completed.</p>
           
           <h3>How will I receive the payment?</h3>
-          <p>All payments will be made either in wxDAI or COW by the CoW Grants Safe. The amount of each token is to be decided among the grantees and the Grants Committee on a case by case basis.&nbsp;</p>
+          <p>All payments will be made either in <a href="https://gnosisscan.io/token/0xe91d153e0b41518a2ce8dd3d7944fa863463a97d" target="_blank" rel="noopener noreferrer">wxDAI</a> or <a href="https://gnosisscan.io/token/0x177127622c4a00f3d409b75571e12cb3c8973d3c" target="_blank" rel="noopener noreferrer">COW</a> (both on Gnosis Chain) by the CoW Grants Safe. The amount of each token is to be decided among the grantees and the Grants Committee on a case by case basis.&nbsp;</p>
 
           <h3>Can I apply for a grant if I am located in Country x?</h3>
           <p>Yes! CoW is a worldwide phenomenon. Regardless of where you are from, you are bound by the <a href="https://cloudflare-ipfs.com/ipfs/Qmf9MYhcG2pFrDoVy13p6FWeVF4nG9HbJvRfYYbhazTCFe" target="_blank" rel="noopener noreferrer">CoW DAO Participation Agreement</a> and the <Link href="/terms">CoW DAO Grant Terms and Conditions</Link> when applying for a grant.&nbsp;</p>
 
           <h3>What type of work/project qualifies for a grant?</h3>
           <p>Anything that benefits the overall CoW Protocol ecosystem will qualify. Prioritization will be based on the impact the grant application will have in the CoW ecosystem &amp; CoWmunity.</p>
-          <p>There are numerous functions that can be funded through grants, such as analytics, tooling, infrastructure, growth and many more. Furthermore, the CGP can also fund ecosystem projects that are complementary to the core product of CoW Protocol, such as CoW-themed gaming/NFT projects and solvers. Check out the &ldquo;<strong>Request for Proposals</strong>&rdquo; section in this document for some CoW-inspiration!</p>
+          <p>There are numerous functions that can be funded through grants, such as analytics, tooling, infrastructure, growth and many more. Furthermore, the CGP can also fund ecosystem projects that are complementary to the core product of CoW Protocol, such as CoW-themed gaming/NFT projects and solvers. Check out the &ldquo;<a href="#rfp">Request for Proposals</a>&rdquo; section in this document for some CoW-inspiration!</p>
           <p>The goal is to fund a wide range of grants, from simple projects to more elaborate and longer term projects. The funding amount will vary to reflect the complexity.</p>
 
           <h3>How often are applications approved?&nbsp;</h3>
@@ -114,20 +114,21 @@ export default function Overview() {
           <p>In order to prevent a grantee from running off with significant funds, the grants committee may establish milestones for any grants above $1K.&nbsp;</p>
           <p>If a grantee has ignored committee messages for 4 weeks, it is considered that the grant has been abandoned and if there are pending milestones to be achieved, they will be marked as incomplete and the funds will not be sent to the grantee.&nbsp;</p>
 
+          <Anchor id="rfp"/>
           <h3>Request for Proposals</h3>
           <ol>
             <li>Trading Related Applications</li>
             <ol>
-              <li>Trading view UI for Degen CoWs &rarr;&nbsp; Think advanced trading type views from places like DEX.guru, Kraken, Coinbase Pro etc.</li>
-              <li>Limit order interface &rarr;&nbsp; Develop a custom limit order mechanism that works with CoW Protocol.</li>
-              <li>DCA order interface &rarr; Build an interface that allows a user to submit orders in batches to be executed in a time period of x.</li>
-              <li>Cross chain trading &rarr;&nbsp; Achieve cross chain order books &amp; CoWs.</li>
-              <li>Wait for CoW &rarr;&nbsp; Develop a feature that allows users to signal the fact that they would rather wait for a CoW, instead of executing at the first possible moment.</li>
+              <li>Trading view UI for Degen CoWs &rarr;&nbsp; Think advanced trading type views from places like DEX.guru, Kraken, Coinbase Pro etc</li>
+              <li>Limit order interface &rarr;&nbsp; Develop a custom limit order mechanism that works with CoW Protocol</li>
+              <li>DCA order interface &rarr; Build an interface that allows a user to submit orders in batches to be executed in a time period of x</li>
+              <li>Cross chain trading &rarr;&nbsp; Achieve cross chain order books &amp; CoWs</li>
+              <li>Wait for CoW &rarr;&nbsp; Develop a feature that allows users to signal the fact that they would rather wait for a CoW, instead of executing at the first possible moment</li>
             </ol>
             <li>Analytics</li>
             <ol>
               <li>Dashboard about DEX activity on other networks (Polygon, Arbitrum, Optimism, BSC, etc.)</li>
-              <li>Protocol level analytics&nbsp;</li>
+              <li>Protocol level analytics</li>
               <ol>
                 <li>Dashboard to display CoWs (Coincidences of Wants)</li>
                 <li>Governance Analytics</li>
@@ -154,13 +155,13 @@ export default function Overview() {
                 <li>Vault relayer&nbsp;</li>
                 <li>API</li>
               </ol>
-              <li>International language documentation &ndash; e.g. French, Spanish, German, Chinese, etc.</li>
-              <li>Content creators &rarr; Create specific articles, papers, etc. that focus on the technicalities of CoW Protocol.</li>
+              <li>International language documentation &ndash; e.g. French, Spanish, German, Chinese, etc</li>
+              <li>Content creators &rarr; Create specific articles, papers, etc. that focus on the technicalities of CoW Protocol</li>
             </ol>
             <li>Design</li>
             <ol>
-              <li>Create Graphics (Art) Material for the CoWmunity &rarr;&nbsp; Memes, cow worlds, poaps, images.</li>
-              <li>CoW POAP/NFT creative use cases &rarr;&nbsp; We want to have the most awesome POAPs &amp; NFTs across town. We are looking for creators to improve our design, style, distribution methods, and ways to display.</li>
+              <li>Create Graphics (Art) Material for the CoWmunity &rarr;&nbsp; Memes, cow worlds, poaps, images</li>
+              <li>CoW POAP/NFT creative use cases &rarr;&nbsp; We want to have the most awesome POAPs &amp; NFTs across town. We are looking for creators to improve our design, style, distribution methods, and ways to display</li>
             </ol>
           </ol>
 
