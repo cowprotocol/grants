@@ -238,7 +238,7 @@ export default function Header({ siteConfig, menu, split }) {
           <Wrapper menuVisible={menuVisible} split={split} className={!inView && 'sticky'}>
             <Link href={siteConfig.url.home}>
               <Logo menuVisible={menuVisible} alternateColor={split}>
-                <img src={`images/logo${(!isDesktopDown && split) ? '-light' : ''}.svg`} alt="CoW Grants Program" />
+                <img src={`images/logo${(!isDesktopDown && split && inView) ? '-light' : ''}.svg`} alt="CoW Grants Program" />
               </Logo>
             </Link>
             <Menu className={menuVisible ? 'visible' : ""}>
