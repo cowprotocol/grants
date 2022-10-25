@@ -57,13 +57,13 @@ const Content = styled.main`
 export default function Layout({ children, route, pageTitle }: LayoutProps) {
   const isSplitted = route === '/' ? true : false
   const { title } = siteConfig
-  const headTitle = `${title} - ${pageTitle}` // Must use a single (text) node to prevent Next.js Title warnings
+  const headTitle = pageTitle ? `${pageTitle} - ${title}` : `${title}` // Must use a single (text) node to prevent Next.js Title warnings
 
   return (
     <>
-      <Head>
+      {headTitle && <Head>
         <title>{headTitle}</title>
-      </Head>
+      </Head>}
 
       <Wrapper>
         <Header menu={mainMenu} siteConfig={siteConfig} split={isSplitted} />
