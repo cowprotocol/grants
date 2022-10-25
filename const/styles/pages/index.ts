@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { transparentize } from 'polished'
 import { Color, Font, Media } from 'const/styles/variables'
-import Button from '@/components/Button'
+import {Wrapper as TextLinkWrapper} from '@/components/TextLink'
 
 export const SectionWrapper = styled.div<{ fixed?: boolean }>`
   display: flex;
@@ -11,69 +10,85 @@ export const SectionWrapper = styled.div<{ fixed?: boolean }>`
   height: 100vh;
 
   ${Media.desktopDown} {
-    flex-flow: column wrap;
     position: relative;
     height: auto;
   }
+
+  ${TextLinkWrapper} {
+    width: 100%;
+    text-align: center;
+    margin: 4.2rem auto;
+    font-size: 1.8rem;
+
+  }
 `
 
-export const Section = styled.section<{ split?: boolean, hasImage?: boolean }>`
+export const Section = styled.section<{ split?: boolean, hasImage?: boolean, bgColor?: string, imageMaxHeight?: number, imageMaxWidth?: number }>`
   display: flex;
   width: 100%;
   min-height: 100%;
   flex-flow: row wrap;
+  background: ${({ bgColor }) => bgColor ? bgColor : 'transparent'};
 
   ${Media.desktopDown} {
     height: auto;
-    max-width: 100%;
+    max-width: 86rem;
+    margin: 0 auto;
     min-height: initial;
     flex-flow: column wrap;
   }
 
   ${({ split }) => (split && `
-    display: flex;
-    width: auto;
-    flex: 1 1 50%;
+    width: 50%;
+    flex: 0 1 50%;
 
-    > img {
-      max-height: 100vh;
+    ${Media.desktopDown} {
+      width: 100%;
+      flex: 1 1 100%;
     }
   `)}
 
   img {
+    margin: auto;
+    object-fit: contain;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: auto
+
+    ${({ split, hasImage }) => (split && hasImage && `
+        max-width: 40%;
+        max-height: 40%;
+    `)}
+
+    ${Media.desktopDown} {
+
+      ${({ split, hasImage }) => (split && hasImage && `
+        max-width: 60%;
+        max-height: 60%;
+      `)}
+    }
   }
 
   ${({ split, hasImage }) => (split && hasImage && `
-    ${Media.tabletPortrait} {
-      min-height: initial;
-      height: 50vh;
-      flex: 1 1 100%;
-
-      > img {
-        object-position: center -20rem;
-        max-height: 34rem;
-      }
-    }
-
     ${Media.desktopDown} {
-      min-height: initial;
-      height: 50vh;
-      flex: 1 1 100%;
-
-      > img {
-        object-position: center;
-        max-height: 70rem;
-
-        ${Media.mobile}{
-          object-position: center -20rem;
-          max-height: 34rem;
-        }
-      }
+      width: 100%;
+      order: 2;
     }
   `)}
+
+  ${({ split }) => (split && `
+    ${Media.desktopDown} {
+      max-width: 100%;
+    }
+  `)}
+`
+
+export const Anchor = styled.span`
+  display: block;
+  position: relative;
+  top: -9rem;
+  visibility: hidden;
 `
 
 export const SectionContent = styled.div<{ split?: boolean }>`
@@ -81,16 +96,22 @@ export const SectionContent = styled.div<{ split?: boolean }>`
   flex-flow: column nowrap;
   width: 100%;
   max-width: 77rem;
-  height: ${({ split }) => split ? 'calc(100vh - 20rem)' : 'auto'};
-  padding: 0 10rem;
-  margin: ${({ split }) => split ? 'auto' : '16rem auto'};
+  height: auto;
+  padding: 0 9rem;
+  margin: 9rem auto;
   justify-content: center;
 
   ${Media.desktopDown} {
     max-width: 100%;
     height: auto;
-    padding: 3rem 3rem 6rem;
+    padding: 3rem 3rem 0;
   }
+
+  ${({ split, hasImage }) => (split && !hasImage && `
+    ${Media.desktopDown} {
+      max-width: 86rem;
+    }
+  `)}
 
   > h1,
   > h2,
@@ -98,9 +119,13 @@ export const SectionContent = styled.div<{ split?: boolean }>`
     text-align: ${({ split }) => split ? 'center' : 'left'};
     font-size: 5rem;
     line-height: 1.3;
-    color: ${Color.black};
+    color: ${Color.darkBlue};
     font-weight: ${({ split }) => split ? Font.weightLight : Font.weightBold};
     margin: ${({ split }) => split ? '0 0 5.6rem' : '0 0 2.4rem'};
+
+    ${Media.desktopSmallHeight} {
+      font-size: 3rem;
+    }
 
     > b {
       font-weight: ${Font.weightBold};
@@ -134,27 +159,23 @@ export const SectionContent = styled.div<{ split?: boolean }>`
   }
 
   > p,
-  > small {
-    font-size: ${({ split }) => split ? '1.7rem' : '1.6rem'};
+  > small,
+  > ul,
+  > ol {
+    font-size: 1.8rem;
     text-align: ${({ split }) => split ? 'center' : 'left'};
     font-weight: ${Font.weightNormal};
-    line-height: ${({ split }) => split ? '1.7' : '1.8'};
+    line-height: 1.6;
     margin: ${({ split }) => split ? '0 0 5.6rem' : '0 0 2.4rem'};
     word-break: break-word;
-
-    ${Media.desktopDown} {
-      font-size: 1.5rem;
-    }
   }
 
   > p > strong,
   > small {
-    color: ${Color.black};
+    color: ${Color.darkBlue};
   }
 
-  > ul > li {
-    word-break: break-word;
-  }
+
 `
 
 export const Content = styled.main`
@@ -176,7 +197,7 @@ export const Content = styled.main`
   p {
     margin: 0 0 1.6rem;
     font-size: ${Font.sizeDefault}rem;
-    color: ${Color.grey};
+    color: ${Color.text1};
     line-height: 1.4;
   }
 `

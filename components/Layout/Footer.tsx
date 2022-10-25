@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link'
-import { Color, Font, Media } from 'const/styles/variables'
+import { Color, Media } from 'const/styles/variables'
 
 const Wrapper = styled.footer<{ split: boolean }>`
   display: flex;
@@ -15,13 +15,16 @@ const Wrapper = styled.footer<{ split: boolean }>`
   ${Media.desktopDown} {
     width: 100%;
     position: relative;
+    background: ${Color.darkBlue};
+    color: ${Color.text2};
+    padding: 3.2rem 0;
   }
 `
 
 const Menu = styled.ol`
   display: flex;
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
@@ -45,8 +48,12 @@ const Menu = styled.ol`
     line-height: 1.2;
 
     &:hover {
-      color: ${Color.black};
       text-decoration: underline;
+      color: ${Color.darkBlue};
+
+      ${Media.desktopDown} {
+        color: ${Color.lightBlue};
+      {
     }
   }
 `
@@ -67,7 +74,7 @@ export default function Footer({ siteConfig, menu, split }) {
             </Link>
           </li>
         ))}</>}
-        <li>©{siteConfig.title} - {currentYear}</li>
+        <li>©{siteConfig.titleShort} {currentYear}</li>
       </Menu>
 
     </Wrapper >

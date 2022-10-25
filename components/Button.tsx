@@ -17,10 +17,10 @@ type ButtonProps = {
 
 const Wrapper = styled.a<Omit<ButtonProps, "href" | "label" | "target" | "rel">>`
   display: flex;
-  background: ${({ variant }) => variant === 'white' ? Color.black : 'transparent'};
+  background: ${({ variant }) => variant === 'white' ? 'transparent' : Color.darkBlue};
   flex-flow: row;
-  border: 0.1rem solid ${({ variant }) => variant === 'white' ? transparentize(0.6, Color.grey) : Color.black};
-  color: ${({ variant }) => variant === 'white' ? Color.white : Color.black};
+  border: 0.1rem solid ${({ variant }) => variant === 'white' ? transparentize(0.6, Color.border) : 'transparent'};
+  color: ${({ variant }) => variant === 'white' ? Color.darkBlue : Color.lightBlue};
   padding: ${({ paddingLR }) => paddingLR ? `0 ${paddingLR}rem` : '0 6rem'};
   margin: ${({ marginTB }) => marginTB ? `${marginTB}rem 0` : '0'};
   box-sizing: border-box;
@@ -32,7 +32,7 @@ const Wrapper = styled.a<Omit<ButtonProps, "href" | "label" | "target" | "rel">>
   justify-content: center;
   transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
   white-space: ${({ wrapText }) => wrapText ? 'initial' : 'nowrap'};
-  font-weight: ${Font.weightBold};
+  font-weight: ${Font.weightMedium};
   text-decoration: none;
   cursor: pointer;
 
@@ -40,12 +40,12 @@ const Wrapper = styled.a<Omit<ButtonProps, "href" | "label" | "target" | "rel">>
     padding: ${({ paddingLR }) => paddingLR ? `0 ${paddingLR}rem` : '0 6rem'};
     margin: ${({ marginTB }) => marginTB ? `${marginTB}rem 0` : '0'};
     min-height: 5.6rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   &:hover {
-    background: ${({ variant }) => variant === 'white' ? Color.white : Color.black};
-    color: ${Color.white};
+    background: ${({ variant }) => variant === 'white' ? Color.darkBlue : Color.darkBlue2};
+    color: ${Color.lightBlue};
   }
 `
 
