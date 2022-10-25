@@ -97,7 +97,7 @@ export const SectionContent = styled.div<{ split?: boolean }>`
   width: 100%;
   max-width: 77rem;
   height: auto;
-  padding: 0 10rem;
+  padding: 0 9rem;
   margin: 9rem auto;
   justify-content: center;
 
