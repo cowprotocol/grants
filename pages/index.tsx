@@ -26,7 +26,7 @@ export default function Home() {
 
         <Section split>
           <SectionContent split>
-            <h1>The mission of the <b>CoW Grants Program</b> is to fund growth of the CoW Protocol ecosystem.</h1>
+            <h1>The mission of the <br></br><b>CoW Grants Program</b> is to fund growth of the CoW Protocol ecosystem.</h1>
             <p>CoW Protocol&apos;s vision is a future where digital assets can be traded in a fair, efficient and reliable manner among people and communities around the world. Our mission is to make CoW Protocol the best and most popular venue to trade digital assets.</p>
             <Button fontSize={2.2} label='Apply for a grant' href="/apply" />
             <TextLink label="Grants program overview" href="/overview"/>
