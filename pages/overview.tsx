@@ -90,7 +90,7 @@ export default function Overview() {
           <p>You are bound by the <a href="https://cloudflare-ipfs.com/ipfs/Qmf9MYhcG2pFrDoVy13p6FWeVF4nG9HbJvRfYYbhazTCFe" target="_blank" rel="noopener noreferrer">CoW DAO Participation Agreement</a> and the <Link href="/terms">CoW Grants Program - Terms and Conditions</Link> when applying for a grant.</p>
           
           <h3>What is the minimum and maximum funding amount of a CoW grant?</h3>
-          <p>The CoW DAO Grants Program provides different levels of funding according to the task to be completed. A more impactful task will require more work and thus will require more funding, while a less impactful trask will require much less work and thus require less funding.&nbsp;</p>
+          <p>The CoW Grants Program provides different levels of funding according to the task to be completed. A more impactful task will require more work and thus will require more funding, while a less impactful trask will require much less work and thus require less funding.&nbsp;</p>
           
           <h3>How will I be compensated for my work?</h3>
           <p>The Grants Committee will work with you to establish possible milestones that could help split up the compensation so as to allow payment whenever a milestone is hit.</p>
