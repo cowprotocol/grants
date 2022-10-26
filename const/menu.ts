@@ -3,8 +3,9 @@ const {url, social} = siteConfig
 
 export const mainMenu = [
   { id: 0, title: 'Overview', url: url.programOverview },
-  { id: 1, title: 'Grants tracker', url: url.tracker },
+  { id: 1, title: 'FAQ', url: url.faq},
   { id: 2, title: 'Apply', url: url.apply },
+  { id: 3, title: 'Grants tracker', url: url.airtableTracker, target: '_blank'},
 ]
 
 export const footerMenu = [

@@ -113,6 +113,16 @@ export const SectionContent = styled.div<{ split?: boolean }>`
     }
   `)}
 
+  > hr {
+    width: 100%;
+    border: 0;
+    height: 0.1rem;
+    background: ${Color.text1};
+    display: block;
+    margin: 0 0 2.4rem;
+    opacity: 0.3;
+  }
+
   > h1,
   > h2,
   > h3 {

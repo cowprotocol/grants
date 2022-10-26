@@ -11,119 +11,107 @@ export default function Overview() {
         <SectionContent>
           <h1>Program overview</h1>
           <p>
-            CoW Protocol&rsquo;s vision is a future where digital assets can be traded in a fair, efficient and reliable manner among people and communities around the world. Our mission is to make CoW Protocol the best and most popular venue to trade digital assets. We will work toward the mission by attracting the brightest minds in trading and decentralized systems, diligently working to innovate and improve the CoW Protocol.
-            <br />
-            <br />
-            The mission of the CoW Grants Program, CGP, is to provide funding to help grow the CoW Protocol ecosystem. For this, CoW Protocol is dedicating 600K <a href="https://gnosisscan.io/token/0xe91d153e0b41518a2ce8dd3d7944fa863463a97d" target="_blank" rel="noopener noreferrer">wXDAI</a> + 600K <a href="https://gnosisscan.io/token/0x177127622c4a00f3d409b75571e12cb3c8973d3c" target="_blank" rel="noopener noreferrer">COW</a> tokens worth of funds for the first 6 months of the grants being live.&nbsp;
-            <br />
-            <br />
-            The primary areas of growth for the CoW Protocol under this proposal are defined as:
+          The mission of the CoW Grants Program is to provide funding to help grow CoW Protocol’s ecosystem. For this, CoW Protocol is dedicating 600K wXDAI and 600K COW tokens worth of funds for the first 6 months of the grants being live. 
+</p><p>
+The primary areas of growth for CoW Protocol under this proposal are defined as:
+
           </p>
           <ul>
             <li>CoWmunity growth</li>
             <li>User interface and user experience (UI/UX)</li>
             <li>Decentralization</li>
-            <li>Develop new Solvers</li>
+            <li>Solver development</li>
             <li>Developer tools (SDK)</li>
             <li>Integrations and protocol order flow</li>
             <li>Other/misc</li>
           </ul>
           <p>The judgment criteria for the grant applications will be based on the following:</p>
           <ul>
-            <li>Feasibility - is the grant feasible to do at this moment or does the grant require upgrades in the protocol layer or overall ecosystem?</li>
-            <li>Impact for the CoW ecosystem - how much of a positive impact will this grant have to the overall CoW Protocol ecosystem?</li>
-            <li>Sanity check - is the amount of workload required for this grant accurate?&nbsp;</li>
-            <li>Technical expertise of the grantee/s - does the grantee have the technical expertise to deliver the grant milestones?</li>
+            <li>Feasibility - Is the grant feasible to do at this moment or does the grant require upgrades in the protocol layer or overall ecosystem?</li>
+            <li>Impact for the CoW ecosystem - How much of a positive impact will this grant have to the overall CoW Protocol ecosystem?</li>
+            <li>Sanity - Is the amount of workload required for this grant accurate?&nbsp;</li>
+            <li>Technical expertise of the grantee/s - Does the grantee have the technical expertise to deliver the grant milestones?</li>
           </ul>
-          <p>As <a href="https://snapshot.org/#/cow.eth/proposal/0xdc641be107f139753cea051f1bacb8b74b915713a95306c3994f5e03e20d6bef" target="_blank" rel="noopener noreferrer">CIP:8 lays out</a>, the CoW Grants Program Safe is managed by two different multi signature wallets. Safe #3 is shared with the CoW DAO (Safe #1) and the Grants Committee (Safe #2). Safe #3 holds all the grant funds. You can check the governing process in the image below:</p>
-          <a href="/images/grant-diagram.png" target="_blank" rel="noopener"><img src="/images/grant-diagram.png" alt="Grant Diagram" /></a>
+          <p>As <a href="https://snapshot.org/#/cow.eth/proposal/0xdc641be107f139753cea051f1bacb8b74b915713a95306c3994f5e03e20d6bef" target="_blank" rel="noopener noreferrer">CIP-8 lays out</a>, the CoW Grants Program Safe is managed by two different multi-signature wallets. Safe #3 is shared with the CoW DAO (Safe #1) and the Grants Committee (Safe #2). Safe #3 holds all the grant funds. You can check the governing process in the image below:
 
-          <h2>Application Process:</h2>
+          </p><p>          <a href="/images/grant-diagram.png" target="_blank" rel="noopener"><img src="/images/grant-diagram.png" alt="Grant Diagram" /></a></p>
+          
+
+
+
+<hr/>
+
+          <h3>Application Process:</h3>
+          <p>
           <ol>
-            <li><strong>Initial public application</strong>
-              <br />
-              The application needs to be made using the <Link href="/apply">grant application form</Link> and by following the instructions in section <a href="#how-to-apply">How to apply</a></li>
-            <br />
-            <li><strong>Application to be chosen for review</strong><br />
-              The committee will choose up to three grants to be reviewed every month. The committee is not obligated to move a specific proposal to the review stage and will do so based on its sole discretion. An applicant can always decide to post their application as a formal DAO proposal.&nbsp;
-              <br /><br />
-              <img src="/images/grants-application-process.png" alt="Grants Application Process" />
+            <li><strong>Initial public application</strong><br/>
+
+             Anyone can submit an application to the CoW Grants Program. They just need to use the <Link href="/apply">grant application form</Link> and follow the instructions in the <Link href="/faq">FAQ</Link>
+             <br/><br/></li>
+            <li><strong>Application review</strong><br/>
+
+              The CoW Grants Committee will choose up to three grants to be reviewed every month. The committee is not obligated to move a specific proposal to the review stage and will do so based on its sole discretion. An applicant can always decide to post their application as a formal DAO proposal
+              <br/><br/></li>
+            <li><strong>Committee feedback</strong><br/>
+
+              After the committee reviews applications, the following outcomes are possible:
+              <ul>
+                <li>The committee finds the application a successful and approves the grant</li>
+                <li>The committee denies the grant, and that is the end of the process</li>
+                <li>The committee meets with the grant applicant and reworks the application together with the applicant to ensure it aligns well with CGP goals. Once updated, the application may be reconsidered</li>
+              </ul><br/>
             </li>
+
+            <li><strong>Grant approval</strong><br/>
+
+              The CoW Grants Program Committee will show preference toward successful grants in a public forum poll where all committee members are required to vote before moving a grant to its final stage
+              <br/><br/></li>
+            <li><strong>Grant structuring &amp; management</strong><br/>
+
+              Once the grant is approved, the committee will outline a series of milestones to be achieved to obtain full funding. Grantees will be compensated for reaching each milestone, successively, and &ndash; if they are not achieved &ndash; the CoW Grants Committee reserves the right to close the grant or stop payment until specific milestones are achieved
+              </li>
           </ol>
-          <p><strong>The application process works as follows:&nbsp;</strong></p>
-          <ol>
-            <li>Anyone can submit an application to the CoW Grants Program. They just need to use the application template to fill in their application details and then wait for the Grants Committee to reach out.&nbsp;</li>
-            <li>The grants committee will review the application and comment on the proposal, which could lead to one of the following possible outcomes:</li>
-            <ol>
-              <li>The committee finds the application a successful and approves the grant</li>
-              <li>The committee denies the grant, and that is the end of the process</li>
-              <li>The committee meets with the grant applicant and reworks together the application to make sure that it aligns correctly with CGP goals. Once changed, the application can be reconsidered</li>
-            </ol>
-          </ol>
-          <p><em>*The committee will show its preference towards the grant in a public forum poll where all committee members are required to vote before moving the grant to the next stage. </em></p>
-          <ol>
-            <li>If the committee feedback is positive, then the Grants Committee will structure the grant</li>
-            <ol>
-              <li>For structuring the grant, the committee will outline a series of milestones to be achieved to obtain the full funding</li>
-              <li>If the milestones are achieved, the grantee will be compensated for reaching that milestone and will move on to the next milestone if its the case</li>
-              <li>If the milestones are not achieved, the Grants Committee reserves the right to stop funding the grantee until completion of the milestones, or decide to officially close the grant</li>
-            </ol>
-          </ol>
+          </p>
+          <p><img src="/images/grants-application-process.png" alt="Grants Application Process" /></p>
+          <p>For questions relating to the CoW Grants Program application process, please visit our <Link href="/faq">FAQ</Link> page.</p>
 
-          <h2>Application FAQs</h2>
-          <h3>What is the CoW Grants Program (CGP)?</h3>
-          <p>The mission of the CGP is to provide funding to help grow the CoW Protocol ecosystem and drive utility and demand for the COW token. The primary areas of growth for CoW Protocol under this proposal are defined as:</p>
-          <ul>
-            <li>CoWmunity growth</li>
-            <li>User interface and user experience (UI/UX)</li>
-            <li>Decentralization</li>
-            <li>Develop new Solvers</li>
-            <li>Developer tools (SDK)</li>
-            <li>Integrations and protocol order flow</li>
-            <li>Other/misc</li>
-          </ul>
 
-          <Anchor id="how-to-apply"/>
-          <h3>How do I apply?</h3>
-          <p>Fill out the <Link href="/apply">application form</Link>. Your application will be visible by everyone and the Grants committee will evaluate whether to decline, meet with you to adjust the application or send it to the official committee for final approval.&nbsp;</p>
-          <p>If you have chosen your application to be private, it will initially only be visible by the Grants committee.&nbsp;</p>
-          <p>You are bound by the <a href="https://cloudflare-ipfs.com/ipfs/Qmf9MYhcG2pFrDoVy13p6FWeVF4nG9HbJvRfYYbhazTCFe" target="_blank" rel="noopener noreferrer">CoW DAO Participation Agreement</a> and the <Link href="/terms">CoW Grants Program - Terms and Conditions</Link> when applying for a grant.</p>
-          
-          <h3>What is the minimum and maximum funding amount of a CoW grant?</h3>
-          <p>The CoW Grants Program provides different levels of funding according to the task to be completed. A more impactful task will require more work and thus will require more funding, while a less impactful trask will require much less work and thus require less funding.&nbsp;</p>
-          
-          <h3>How will I be compensated for my work?</h3>
-          <p>The Grants Committee will work with you to establish possible milestones that could help split up the compensation so as to allow payment whenever a milestone is hit.</p>
-          <p>If no milestones can be determined, the Grant will be paid a portion upfront to cover costs and the remaining total once the grant is successfully completed.</p>
-          
-          <h3>How will I receive the payment?</h3>
-          <p>All payments will be made either in <a href="https://gnosisscan.io/token/0xe91d153e0b41518a2ce8dd3d7944fa863463a97d" target="_blank" rel="noopener noreferrer">wXDAI</a> or <a href="https://gnosisscan.io/token/0x177127622c4a00f3d409b75571e12cb3c8973d3c" target="_blank" rel="noopener noreferrer">COW</a> (both on Gnosis Chain) by the CoW Grants Program Safe. The amount of each token is to be decided among the grantees and the Grants Committee on a case by case basis.&nbsp;</p>
 
-          <h3>Can I apply for a grant if I am located in Country x?</h3>
-          <p>Yes! CoW is a worldwide phenomenon. Regardless of where you are from, you are bound by the <a href="https://cloudflare-ipfs.com/ipfs/Qmf9MYhcG2pFrDoVy13p6FWeVF4nG9HbJvRfYYbhazTCFe" target="_blank" rel="noopener noreferrer">CoW DAO Participation Agreement</a> and the <Link href="/terms">CoW Grants Program - Terms and Conditions</Link> when applying for a grant.&nbsp;</p>
+          <hr/>
 
-          <h3>What type of work/project qualifies for a grant?</h3>
-          <p>Anything that benefits the overall CoW Protocol ecosystem will qualify. Prioritization will be based on the impact the grant application will have in the CoW ecosystem &amp; CoWmunity.</p>
-          <p>There are numerous functions that can be funded through grants, such as analytics, tooling, infrastructure, growth and many more. Furthermore, the CGP can also fund ecosystem projects that are complementary to the core product of CoW Protocol, such as CoW-themed gaming/NFT projects and solvers. Check out the &ldquo;<a href="#rfp">Request for Proposals</a>&rdquo; section in this document for some CoW-inspiration!</p>
-          <p>The goal is to fund a wide range of grants, from simple projects to more elaborate and longer term projects. The funding amount will vary to reflect the complexity.</p>
 
-          <h3>How often are applications approved?&nbsp;</h3>
-          <p>CoW Grants Program aim to issue rounds of grant funding on an application basis until the first CoW DAO installment has dried up.</p>
 
-          <h3>What happens if a grantee doesn&apos;t follow through their duties?</h3>
-          <p>In order to prevent a grantee from running off with significant funds, the grants committee may establish milestones for any grants above $1K.&nbsp;</p>
-          <p>If a grantee has ignored committee messages for 4 weeks, it is considered that the grant has been abandoned and if there are pending milestones to be achieved, they will be marked as incomplete and the funds will not be sent to the grantee.&nbsp;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           <Anchor id="rfp"/>
           <h3>Request for Proposals</h3>
+          <p>The following is a non-exhaustive list of potential projects that the CoW Grants Program might have an interest in funding.</p>
           <ol>
-            <li>Trading Related Applications</li>
+            <li>Trading-related applications</li>
             <ol>
-              <li>Trading view UI for Degen CoWs &rarr;&nbsp; Think advanced trading type views from places like DEX.guru, Kraken, Coinbase Pro etc</li>
-              <li>Limit order interface &rarr;&nbsp; Develop a custom limit order mechanism that works with CoW Protocol</li>
-              <li>DCA order interface &rarr; Build an interface that allows a user to submit orders in batches to be executed in a time period of x</li>
-              <li>Cross chain trading &rarr;&nbsp; Achieve cross chain order books &amp; CoWs</li>
-              <li>Wait for CoW &rarr;&nbsp; Develop a feature that allows users to signal the fact that they would rather wait for a CoW, instead of executing at the first possible moment</li>
+              <li>Trading view UI for Degen CoWs &rarr; Think advanced trading type views from places like DEX.guru, Kraken, Coinbase Pro, etc.</li>
+              <li>Limit order interface &rarr; Develop a custom limit order mechanism that works with CoW Protocol</li>
+              <li>DCA order interface &rarr; Build an interface that allows a user to submit orders in batches to be executed in various time horizons</li>
+              <li>Cross chain trading &rarr; Achieve cross chain order books &amp; CoWs</li>
+              <li>Wait for CoW &rarr; Develop a feature that allows users to signal the fact that they would rather wait for a CoW, instead of executing at the first possible moment</li>
             </ol>
             <li>Analytics</li>
             <ol>
@@ -139,7 +127,7 @@ export default function Overview() {
             <ol>
               <li>Develop a Solver specialized in weighted pools</li>
               <li>Develop a Solver specialized in finding CoWs</li>
-              <li>Develop a Solver specialized in tapping into Private Liquidity</li>
+              <li>Develop a Solver specialized in tapping into private liquidity</li>
             </ol>
             <li>Integrations</li>
             <ol>
@@ -147,26 +135,29 @@ export default function Overview() {
             </ol>
             <li>Education</li>
             <ol>
-              <li>How-to guides (written or video)</li>
+              <li>How-to guides (written or video). For example:</li>
               <ol>
-                <li>Swap tokens</li>
-                <li>Overall protocol mechanism</li>
-                <li>Solvers</li>
-                <li>Vault relayer&nbsp;</li>
-                <li>API</li>
+                <li>How to swap tokens</li>
+                <li>How CoW Protocol works</li>
+                <li>How to build a solver</li>
+                <li>How Solvers work</li>
+                <li>Using vault relayers</li>
+                <li>Understanding the CoW Protocol API</li>
               </ol>
-              <li>International language documentation &ndash; e.g. French, Spanish, German, Chinese, etc</li>
-              <li>Content creators &rarr; Create specific articles, papers, etc. that focus on the technicalities of CoW Protocol</li>
+              <li>International language documentation, e.g. French, Spanish, German, Chinese, etc.</li>
+              <li>Content creation &rarr; Articles, papers, etc. that focus on the technicalities of CoW Protocol</li>
             </ol>
             <li>Design</li>
             <ol>
-              <li>Create Graphics (Art) Material for the CoWmunity &rarr;&nbsp; Memes, cow worlds, poaps, images</li>
-              <li>CoW POAP/NFT creative use cases &rarr;&nbsp; We want to have the most awesome POAPs &amp; NFTs across town. We are looking for creators to improve our design, style, distribution methods, and ways to display</li>
+              <li>Create Graphics (Art) Material for the CoWmunity: &rarr; Memes, CoW worlds, POAPs, images, explainer GIFs, etc.</li>
+              <li>CoW POAP/NFT creative use cases &rarr; We want to have the most awesome POAPs &amp; NFTs across town. We are looking for creators to improve our design, style, distribution methods, and ways to display POAPs</li>
             </ol>
           </ol>
 
+          <hr/>
+          
           <h3>Grants Committee</h3>
-          <p>The grants committee has a distribution of 7 community members. Safe #2 (from the schematic image above) <a href="https://gnosis-safe.io/app/gno:0xCA1F000D520c21C47E6c634DD31b92b91A6338bD/settings/owners" target="_blank" rel="noopener noreferrer">gno:0xCA1F000D520c21C47E6c634DD31b92b91A6338bD</a> functions as the Grants committee Safe and has 7 signers with a signing threshold of 5 out of 7. The specified committee members:</p>
+          <p>The CoW Grants Program committee is comprised of 7 CoWmunity members. They are:</p>
           <ul>
             <li><a href="https://forum.cow.fi/u/netrunner.eth" target="_blank" rel="noopener noreferrer">@netrunner.eth</a> - 0xc95Fda8A94437c1B936169b62858F13aE0386307</li>
             <li><a href="https://forum.cow.fi/u/kubesqrt" target="_blank" rel="noopener noreferrer">@Kubesqrt</a> - 0x386b4ba873a4f423ca28a4df1b2347ca949ced0e</li>
@@ -176,7 +167,8 @@ export default function Overview() {
             <li><a href="https://forum.cow.fi/u/Master_CoW" target="_blank" rel="noopener noreferrer">@Master_CoW</a> - 0x76ba9825a5f707f133124e4608f1f2dd1ef4006a</li>
             <li><a href="https://forum.cow.fi/u/fairlight" target="_blank" rel="noopener noreferrer">@fairlight</a> - 0xCA55E77Ec514B5BD05B3b2B56f106Ba2Fe593A9f</li>
           </ul>
-          <p>All committee members have provided a brief description of their background on the <a href="https://forum.cow.fi/t/cip-draft-cowswap-grants-program-cgp/314" target="_blank" rel="noopener noreferrer">CIP forum discussion</a>. The committee can be reached on the forum, the Discord channel or through <a href="mailto:grants@cow.fi" target="_blank" rel="noopener noreferrer">grants@cow.fi</a>.</p>
+          <p>Safe #2 (see diagram above), <a href="https://gnosis-safe.io/app/gno:0xCA1F000D520c21C47E6c634DD31b92b91A6338bD/settings/owners" target="_blank" rel="noopener noreferrer">gno:0xCA1F000D520c21C47E6c634DD31b92b91A6338bD</a> functions as the CoW Grants Program committee Safe. The Safe has a signing threshold of 5 out of 7, and each of these committee members is a signer.</p>
+          <p>All committee members have provided a brief description of their background on the <a href="https://forum.cow.fi/t/cip-draft-cowswap-grants-program-cgp/314" target="_blank" rel="noopener noreferrer">CIP forum discussion</a>. The committee can be reached via the CoW Protocol forum or Discord - or at <a href="mailto:grants@cow.fi" target="_blank" rel="noopener noreferrer">grants@cow.fi</a>.</p>
 
           <Button fontSize={1.8} marginTB={3.2} label='Apply for a grant' href="/apply" />
         </SectionContent>
