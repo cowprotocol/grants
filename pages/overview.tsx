@@ -11,7 +11,7 @@ export default function Overview() {
         <SectionContent>
           <h1>Program overview</h1>
           <p>
-            The mission of the CoW Grants Program is to provide funding to help grow CoW Protocol’s ecosystem. For this, CoW Protocol is dedicating 600K wXDAI and 600K COW tokens worth of funds for the first 6 months of the grants being live.
+            The mission of the CoW Grants Program is to provide funding to help grow CoW Protocol’s ecosystem. For this, CoW Protocol is dedicating 600K <a href="https://gnosisscan.io/token/0xe91d153e0b41518a2ce8dd3d7944fa863463a97d" target="_blank" rel="noopener noreferrer">wXDAI</a> and 600K <a href="https://gnosisscan.io/token/0x177127622c4a00f3d409b75571e12cb3c8973d3c" target="_blank" rel="noopener noreferrer">COW</a> tokens worth of funds for the first 6 months of the grants being live.
           </p><p>
             The primary areas of growth for CoW Protocol under this proposal are defined as:
 
@@ -47,7 +47,7 @@ export default function Overview() {
                 <br /><br /></li>
               <li><strong>Application review</strong><br />
 
-                The committee is not obligated to move a specific proposal to the review stage and will do so based on its sole discretion.
+                The committee is not obligated to move a specific proposal to the review stage and will do so based on its sole discretion
                 <br /><br /></li>
               <li><strong>Committee feedback</strong><br />
 
