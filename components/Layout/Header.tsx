@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link'
+import { useRouter } from "next/router";
 import { transparentize } from 'polished'
 import { Defaults, Color, Font, Media } from 'const/styles/variables'
 import useMediaQuery from 'lib/hooks/useMediaQuery';
@@ -92,8 +93,17 @@ const Menu = styled.ol`
     }
 
   }
+`
 
-  > li:not(:last-of-type) {
+const MenuItem = styled.li<{ isActive: boolean }>`
+  opacity: ${({ isActive }) =>  isActive ? 1 : 0.8};
+  font-weight: ${({ isActive }) =>  isActive ? 'bold' : 'normal'};
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:not(:last-of-type) {
     margin: 0 3.6rem 0 0;
 
     ${Media.desktopDown} {
@@ -102,16 +112,14 @@ const Menu = styled.ol`
     }
   }
 
-  > li {
-    ${Media.desktopDown} {
-      margin: 0 0 2.6rem;
-      line-height: 1;
-      width: 100%;
-      text-align: center;
-    }
+  ${Media.desktopDown} {
+    margin: 0 0 2.6rem;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
   }
 
-  > li > a {
+  > a {
     font-size: inherit;
     color: inherit;
     text-decoration: none;
@@ -219,6 +227,9 @@ const Logo = styled.div<{ menuVisible: boolean, alternateColor: boolean }>`
 `
 
 export default function Header({ siteConfig, menu, split }) {
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
   const [menuVisible, setIsMenuVisible] = useState(false)
   const toggleBodyScroll = () => {
     !menuVisible ? document.body.classList.add('noScroll') : document.body.classList.remove('noScroll')
@@ -243,9 +254,9 @@ export default function Header({ siteConfig, menu, split }) {
             </Link>
             <Menu className={menuVisible ? 'visible' : ""}>
               {menu.map(({ id, title, url, target, rel }) => (
-                <li key={id}>
+                <MenuItem key={id} isActive={currentRoute === url}>
                   <a href={url} target={target} rel={rel}>{title}</a>
-                </li>
+                </MenuItem>
               ))}
               <CloseIcon onClick={handleClick} />
             </Menu>
