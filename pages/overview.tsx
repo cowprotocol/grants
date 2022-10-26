@@ -47,7 +47,7 @@ export default function Overview() {
                 <br /><br /></li>
               <li><strong>Application review</strong><br />
 
-                The committee is not obligated to move a specific proposal to the review stage and will do so based on its sole discretion
+              The CoW Grants Committee will review grant applications as soon as they possibly can. The committee is not obligated to move or rush a specific proposal to the review stage and will do so based on its sole discretion.
                 <br /><br /></li>
               <li><strong>Committee feedback</strong><br />
 
