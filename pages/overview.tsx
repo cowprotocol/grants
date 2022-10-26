@@ -96,6 +96,9 @@ export default function Overview() {
               </ol>
             </ol>
             <li>Tooling</li>
+            <ol>
+              <li>Language specific clients to ease the development of other tools such as interfaces</li>
+            </ol>
             <li>Solvers</li>
             <ol>
               <li>Develop a Solver specialized in weighted pools</li>
