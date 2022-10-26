@@ -11,9 +11,9 @@ export default function Overview() {
         <SectionContent>
           <h1>Program overview</h1>
           <p>
-          The mission of the CoW Grants Program is to provide funding to help grow CoW Protocol’s ecosystem. For this, CoW Protocol is dedicating 600K wXDAI and 600K COW tokens worth of funds for the first 6 months of the grants being live. 
-</p><p>
-The primary areas of growth for CoW Protocol under this proposal are defined as:
+            The mission of the CoW Grants Program is to provide funding to help grow CoW Protocol’s ecosystem. For this, CoW Protocol is dedicating 600K wXDAI and 600K COW tokens worth of funds for the first 6 months of the grants being live.
+          </p><p>
+            The primary areas of growth for CoW Protocol under this proposal are defined as:
 
           </p>
           <ul>
@@ -35,73 +35,46 @@ The primary areas of growth for CoW Protocol under this proposal are defined as:
           <p>As <a href="https://snapshot.org/#/cow.eth/proposal/0xdc641be107f139753cea051f1bacb8b74b915713a95306c3994f5e03e20d6bef" target="_blank" rel="noopener noreferrer">CIP-8 lays out</a>, the CoW Grants Program Safe is managed by two different multi-signature wallets. Safe #3 is shared with the CoW DAO (Safe #1) and the Grants Committee (Safe #2). Safe #3 holds all the grant funds. You can check the governing process in the image below:
 
           </p><p>          <a href="/images/grant-diagram.png" target="_blank" rel="noopener"><img src="/images/grant-diagram.png" alt="Grant Diagram" /></a></p>
-          
 
-
-
-<hr/>
+          <hr />
 
           <h3>Application Process:</h3>
           <p>
-          <ol>
-            <li><strong>Initial public application</strong><br/>
+            <ol>
+              <li><strong>Initial public application</strong><br />
 
-             Anyone can submit an application to the CoW Grants Program. They just need to use the <Link href="/apply">grant application form</Link> and follow the instructions in the <Link href="/faq">FAQ</Link>
-             <br/><br/></li>
-            <li><strong>Application review</strong><br/>
+                Anyone can submit an application to the CoW Grants Program. They just need to use the <Link href="/apply">grant application form</Link> and follow the instructions in the <Link href="/faq">FAQ</Link>
+                <br /><br /></li>
+              <li><strong>Application review</strong><br />
 
-              The CoW Grants Committee will choose up to three grants to be reviewed every month. The committee is not obligated to move a specific proposal to the review stage and will do so based on its sole discretion. An applicant can always decide to post their application as a formal DAO proposal
-              <br/><br/></li>
-            <li><strong>Committee feedback</strong><br/>
+                The committee is not obligated to move a specific proposal to the review stage and will do so based on its sole discretion.
+                <br /><br /></li>
+              <li><strong>Committee feedback</strong><br />
 
-              After the committee reviews applications, the following outcomes are possible:
-              <ul>
-                <li>The committee finds the application a successful and approves the grant</li>
-                <li>The committee denies the grant, and that is the end of the process</li>
-                <li>The committee meets with the grant applicant and reworks the application together with the applicant to ensure it aligns well with CGP goals. Once updated, the application may be reconsidered</li>
-              </ul><br/>
-            </li>
-
-            <li><strong>Grant approval</strong><br/>
-
-              The CoW Grants Program Committee will show preference toward successful grants in a public forum poll where all committee members are required to vote before moving a grant to its final stage
-              <br/><br/></li>
-            <li><strong>Grant structuring &amp; management</strong><br/>
-
-              Once the grant is approved, the committee will outline a series of milestones to be achieved to obtain full funding. Grantees will be compensated for reaching each milestone, successively, and &ndash; if they are not achieved &ndash; the CoW Grants Committee reserves the right to close the grant or stop payment until specific milestones are achieved
+                After the committee reviews applications, the following outcomes are possible:
+                <ul>
+                  <li>The committee finds the application a successful and approves the grant</li>
+                  <li>The committee denies the grant, and that is the end of the process</li>
+                  <li>The committee meets with the grant applicant and reworks the application together with the applicant to ensure it aligns well with CGP goals. Once updated, the application may be reconsidered</li>
+                </ul><br />
               </li>
-          </ol>
+
+              <li><strong>Grant approval</strong><br />
+
+                The CoW Grants Program Committee will show preference toward successful grants in a public forum poll where all committee members are required to vote before moving a grant to its final stage
+                <br /><br /></li>
+              <li><strong>Grant structuring &amp; management</strong><br />
+
+                Once the grant is approved, the committee will outline a series of milestones to be achieved to obtain full funding. Grantees will be compensated for reaching each milestone, successively, and &ndash; if they are not achieved &ndash; the CoW Grants Committee reserves the right to close the grant or stop payment until specific milestones are achieved
+              </li>
+            </ol>
           </p>
           <p><img src="/images/grants-application-process.png" alt="Grants Application Process" /></p>
           <p>For questions relating to the CoW Grants Program application process, please visit our <Link href="/faq">FAQ</Link> page.</p>
 
+          <hr />
 
-
-          <hr/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <Anchor id="rfp"/>
+          <Anchor id="rfp" />
           <h3>Request for Proposals</h3>
           <p>The following is a non-exhaustive list of potential projects that the CoW Grants Program might have an interest in funding.</p>
           <ol>
@@ -154,8 +127,8 @@ The primary areas of growth for CoW Protocol under this proposal are defined as:
             </ol>
           </ol>
 
-          <hr/>
-          
+          <hr />
+
           <h3>Grants Committee</h3>
           <p>The CoW Grants Program committee is comprised of 7 CoWmunity members. They are:</p>
           <ul>
