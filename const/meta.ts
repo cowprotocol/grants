@@ -7,7 +7,7 @@ export const siteConfig = {
   url: {
     root: "https://grants.cow.fi",
     home: "/",
-    tracker: "/tracker",
+    faq: "/faq",
     programOverview: "/overview",
     apply: "/apply",
     airtableApply: 'https://airtable.com/shrt7Rmd5XMYooRsu',
