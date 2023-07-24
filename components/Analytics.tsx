@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 import Router from 'next/router'
-import ReactGA from 'react-ga';
-import { Media } from 'const/styles/variables'
-import useMediaQuery from 'lib/hooks/useMediaQuery';
-import { siteConfig } from '@/const/meta'
+import ReactGA from 'react-ga4'
+import { isMobile } from 'react-device-detect'
 
-function handleRouteChange(url: string) {
-  console.log('[Analytics] Page view', url)
-  ReactGA.pageview(url);
+const trackingId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS
+
+function handleRouteChange(page_path: string) {
+  console.log('[Analytics] Page view', page_path)
+  ReactGA.send({ hitType: 'pageview', page_path })
 }
 
-function initializeAnalytics(isMobile) {
-  console.log('[Analytics] Tracking ID', siteConfig.googleAnalyticsID)
-  ReactGA.initialize(siteConfig.googleAnalyticsID, {
+function initializeAnalytics() {
+  console.log('[Analytics] Tracking ID', trackingId)
+  ReactGA.initialize(trackingId, {
     gaOptions: {
       storage: 'none',
       storeGac: false,
@@ -23,10 +23,9 @@ function initializeAnalytics(isMobile) {
     customBrowserType: !isMobile
       ? 'desktop'
       : 'web3' in window || 'ethereum' in window
-        ? 'mobileWeb3'
-        : 'mobileRegular',
+      ? 'mobileWeb3'
+      : 'mobileRegular',
   })
-
 
   // Handle all route changes
   handleRouteChange(Router.pathname)
@@ -34,34 +33,31 @@ function initializeAnalytics(isMobile) {
 }
 
 export function Analytics() {
-
   // Internal state
   const [analytics, setAnalytics] = useState({
-    isInitialized: false
+    isInitialized: false,
   })
-
-  const isMobile = useMediaQuery(`(max-width: ${Media.smallScreen})`);
 
   // Use effect is used so the code is only executed client side (not server side)
   useEffect(() => {
     const { isInitialized } = analytics
 
     // Initialize Analytics
-    if (siteConfig.googleAnalyticsID && !isInitialized) {
-      initializeAnalytics(isMobile)
-      setAnalytics(prev => ({
+    if (trackingId && !isInitialized) {
+      initializeAnalytics()
+      setAnalytics((prev) => ({
         ...prev,
-        isInitialized: true
+        isInitialized: true,
       }))
     }
 
     return () => {
       // clean up
       if (isInitialized) {
-        Router.events.off('routeChangeComplete', handleRouteChange);
+        Router.events.off('routeChangeComplete', handleRouteChange)
       }
     }
-  }, [analytics, isMobile])
+  }, [analytics])
 
   return null
 }
